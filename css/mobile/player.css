@@ -1,0 +1,122 @@
+html #contentFrame {
+	margin-top:43px;
+	overflow: hidden;
+}
+
+html.position-fixed #headerContainer {
+	position:fixed;
+	top: 0px;
+}
+
+#audioButton.muted {
+	text-decoration:line-through;
+}
+
+#backButton {
+	background-image:url(../../images/mobile/Pre_topBar_prev.png);
+}
+
+
+#closeMenu {
+	cursor:pointer;
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+
+#footerContainer {
+	height:0px;
+	display:none;
+}
+
+#forwardButton span, #backButton span, #listButton span {
+	display:none;
+}
+
+#forwardButton, #backButton, #listButton {
+	background-position:0px 2px;
+	background-repeat:no-repeat;
+	width: 42px;
+}
+
+#forwardButton {
+	background-image:url(../../images/mobile/Pre_topBar_next.png);
+}
+
+#headerContainer {
+	background-image:url(../../images/mobile/Pre_topbar_back.png);
+	background-color:#000;
+	float:left;	
+	height:43px;
+	line-height:43px;
+	position:relative;
+	z-index:2;
+}
+
+#listButton {
+	background-image:url(../../images/mobile/Pre_ControlsButton.png);
+	margin-left:5px;
+	position:relative;
+	float:left;
+	z-index:1000;
+}
+
+#moduleName, #objectName {
+	display:none;
+}
+
+#moreButtons {
+	overflow:hidden;
+}
+
+#navigationButtons {
+	display:inline-block;
+	float:right;
+	padding-right:5px;
+	z-index:1000;
+	margin-right:5px;
+	position:relative;
+	width:auto;
+}
+
+#screenCount {
+	color:#FFF;
+	display:inline-block;
+	font-size:20px;
+	height:43px;
+	line-height:43px;
+	padding-right:15px;
+	position:absolute;	
+	text-align:center;
+	top:0px;left:0px;
+	vertical-align:top;
+	width:100%;
+	z-index:1;
+}
+
+.navButton {
+	color:#FFF;
+	cursor:pointer;
+	display:inline-block;
+	height:43px;
+	line-height:43px;
+}
+
+.navButton .button-label {
+	display: inline;	
+	text-align: left;
+	text-decoration: none;
+	padding: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.modTestName {
+	display:block;
+	font-weight:bold;
+}
+
+#logo{
+	display: none;
+}
+

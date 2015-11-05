@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+	<html class="coursePlayer noNav light ltr" dir="ltr" lang="en-US">
+		<head id="head" data-viewport-width="1010">
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8">			
+			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+			<meta http-equiv="Content-Language" content="en-US">
+					
+	<script>
+	if(!DKI){
+		var DKI = {};
+	}
+	DKI.strings = {
+		browserWaring         : {"message":"Your current browser is obsolete. <br> For the best experience in this course (and possibly your life) we suggest one of the following browsers:","downloadIe":"Download Internet Explorer","downloadChrome":"Download Google Chrome","downloadFirefox":"Download Firefox","close":"close","downloadSafari":"Download Safari","title":"Improve your experience"},
+		certificate           : {"sign":"Signature:","body":"This is to certify that <span id='certificate_studentName'><\/span> has completed the course <span id='certificate_courseName'><\/span>","print":"print","printTooltip":"Print your certificate","title":"Certificate of Completion"},
+		courseSearch          : {"filterTranscripts":"Transcripts","back":"Back","filterAudio":"Audio","sequentialWarningText":"To view all search results, this course must be completed.","seeAlso":"See Also","sequentialWarningTitle":"Sequential Course","filterVideos":"Videos","foundLocations":"Found Locations","filterImages":"Images","filterTop":"Top Hits","filterText":"Text Items","filterGlossaries":"Glossary Items","filterObjectives":"Objectives","filterRichMedia":"Rich Media","inputPlaceholder":"Enter Search Term","filterReferences":"References Items","title":"Course Search"},
+		doc                   : {"Drag items header":"Drag Items","Feedback table submission":"Submission","Drag table matches header":"Match(es)","Source label":"Source: ","Possible match label":"Possible Matches","Webpage element table header":"External Webpage","yes":"Yes","Element table embed code":"Embed Code","Metadata table created on":"Created On","Embedded video table header":"Embedded Video","Audio element table header":"Audio Element","Publish settings header":"Publish Settings","TOC Heading":"Contents","Publish table description":"Description","Metadata table created by":"Created By","Feedback all incorrect":"All Incorrect","Feedback incorrect attempt":"Incorrect Attempt","Settings table header":"Settings","Question feedback header":"Question Feedback","Metadata table title":"Title","Settings table pass mark":"Pass Mark","Drop targets label":"Drop Targets","True choice":"True","Element":" Element","Settings table categories":"Categories","Stream element table header":"Media Stream Element","Element table description":"Description","Link end":"[END LINK]","Metadata table header":"Properties","False choice":"False","Page transcript header":"Page Transcript","Metadata table description":"Description","transcript":"Transcript","Metadata table modified date":"Last Modified On","Correct choice label":"Correct: ","Choices header":"Choices","Glossary Heading":"Glossary","Element table URL":"URL","Feedback label":"Feedback: ","no":"No","Test answer header":"Testing Answer Key","Feedback partial attempt":"Partially Correct Attempt","student response label":"See student response","Course settings header":"Course Settings","Widget element table header":"HTML Widget Element","Targets header":"Target(s)","Page note header":"Page Note","Settings table duration":"Duration","Feedback partial":"Partially Correct","Settings table lifecycle":"Lifecycle","Publish table profile":"Publishing Profile","Page":"Page ","page of":" of ","Bibliography Heading":"Bibliography","Created date label":"Created: ","Question type label":"Question Type: ","Resources Heading":"Resources","Metadata table copy status":"Copy Status","Drag table items header":"Items","Element table title":"Title","Settings table project":"Project","Testing Heading":"Testing","Feedback all correct":"All Correct","Course metadata header":"Course Properties","Metadata table modified by":"Last Modified By","Link start":"[BEGIN LINK -","Publish table title":"Title"},
+		endCourse             : {"certNotAvailable":"(Not Available)","viewCertificate":"View Certificate","testing":"Testing","testLinkLabel":"Take Test","incompleteT":"Incomplete","LearningStatusLabel":"Learning:","passingScoreLabel":"Passing Score:","testingStatusLabel":"Testing:","headerLabel":"You have reached the end of:","viewBibliography":"View Bibliography"},
+		endMod                : {"testStatusLabel":"Score:","revisitContentButton":"View Content Again","reviewTestButton":"Review Test","headerText":"You have reached the end of:","learningStatusLabel":"Learning:","testingLinkLabel":"Take Test","passingScoreLabel":"Passing Score:","moduleNameLabel":"Module Name","learningLinkLabel":"Continue"},
+		endTest               : {"revisitContentButton":"View Content Again","reviewLinkLabel":"Review Test","testScoreLabel":"Total score for this test:","learningStatusLabel":"Learning:","retakeTestButton":"Retake Test","moduleNameLabel":"Module Name","passingScoreLabel":"Passing Score:","testingStatusLabel":"Testing:","learningLinkLabel":"Continue","headerLabel":"You've finished the test for:"},
+		glossary              : {"titleText":"Glossary","viewTermTooltip":"View this term in the browser","definitionText":"Definition"},
+		goodbye               : {"message":"Thank you for exiting the content. You may now navigate away from this content."},
+		index                 : {"icloseButtonLabel":"Close","outlineTabLabel":"Outline","listButtonLabel":"More","exitButtonLabel":"Exit","skipToContent":"Skip to page content.","iPageTitle":"Course Player","transcriptButtonLabel":"Transcript","previousButtonLabel":"Previous","audioButtonLabel":"Audio","resourcesButtonLabel":"Resources","menuButtonLabel":"Menu","replayButtonLabel":"Replay","skipToNavigation":"Skip to navigation.","returnToContent":"Return to page content.","feedbackTabLabel":"Feedback","glossaryButtonLabel":"Glossary","nextButtonLabel":"Next"},
+		launch                : {"launchCourse":"Launch Course","pleaseWaitMessage":"Please wait while your course opens in a new window.","dontClose":"Do NOT close this window while you are taking this course or your results will not be recorded."},
+		questionInstructions  : {"3":"Enter your answer","2":"Circle the correct answer(s)","1":"Circle the correct answer","6":"Match the items below","5":"Circle one answer in each list","4":"Fill in your answer for each blank"},
+		references            : {"txtReferenceLink":"Access Reference","bibliographyWindowTitle":"Bibliography","viewBibliography":"View the bibliography."},
+		resources             : {"txtElementLinkTitle":"Element Link","htmlType":"HTML","resourceBrowserTitle":"Resources","txtLinksHeader":"links","txtPrintableVersionTitle":"Printable version of the course","flashType":"SWF","videoType":"Videos","txtPrintableVersionHeader":"Printable Version","audioType":"Audio","imageType":"Images","txtNewWindowTitle":"Click to open in a new window","documentType":"Documents","txtSaveAs":"Right click and select \"Save as...\""},
+		runtime               : {"noNavLabel":"You cannot navigate to that page yet.","media_instructions_volume":"Press plus or minus to control volume.","passText":"Pass","testingDisabled":"Testing is not enabled for this course.","autoPlayDisabler":"Touch anywhere to start your page","txtInstructionsLabel":"Please enter your feedback below.","iResume":"Please select OK to resume course, or Cancel to start over.","buttonLabelCancel":"Cancel","txtNoOutline":"No outline available","notesLabel":"Notes","exceededTestAttempts":"You have exceeded the maximum number of test attempts for this module.","media_instructions_mute":"Press 'm' to mute and un-mute audio.","txtErrorLoadCmpltn":"Error loading completion","transcriptLabel":"Transcript","mrkrErrorLabel1":"Invalid question type","txtEnterName":"Please enter your name","txtRemainingAttempts":"Remaining Attempts:","confirmQuestionNoSelection":"Are you sure you wish to submit this question without providing any answers?","txtLine1Noted":"noted:","txtTakeTest":"Take Test","txtTitleCurrentPage":"Current Page Feedback","tstchoicesLabel2":"selections.","txtNotAvailableShort":"N\/A","media_instructions_fullscreen":"Press 'f' to enter fullscreen, escape to exit fullscreen.","tstchoicesLabel1":"You cannot choose more than","resourceBrowserTitle":"Resource Browser","buttonLabelSubmit":"Submit","retakeTest":"Retake Test","txtFailedLoadAssess":"Failed to load assessment","falseOptionLabel":"False","noOutlineLabel":"No Outline Available","noModuleTesting":"This module does not have any testing.","testTryAgain":"Try Again","pretestQuestLabel":"Launch Pretest?","trueOptionLabel":"True","txtScore":"Score:","txtTitleNoFeedBack":"No Reviewer Feedback","tabLabelAllFeedBk":"All Feedback","failText":"Fail","tabLabelPageFeedBk":"Page Feedback","quitTestWarning":"You will fail this test attempt if you quit now.","media_instructions_play":"Press enter or space to play and pause the media.","buttonLabelNext":"Next","media_instructions_transcript":"Press 't' to open the transcript.","buttonLabelClose":"Close","incompleteText":"Incomplete","txtPoints":"points"}
+	};
+	var playerStrings = DKI.strings.runtime;
+	var endscreenStrings = DKI.strings.endCourse;
+	var moduleStringText = DKI.strings.endMod;
+	</script>
+
+	
+			<meta name="viewport" content="width=1010">
+			<style>			
+				@-ms-viewport, @-webkit-viewport, @-moz-viewport, @-o-viewport, @viewport{
+					width: 1010px;					
+				}
+			</style>
+		
+			<link rel="stylesheet" href="css/tabs.css" />
+			<link rel="stylesheet" href="css/tree.css" />
+			<link rel="stylesheet" href="css/prompt.css" />
+			<link rel="stylesheet" href="css/browserWarning.css" />
+			
+				<link rel="stylesheet" href="css/player.css" />
+			
+			<link rel="stylesheet" href="css/feedback.css" />
+			
+			<!--[if lte IE 8]>
+			
+			<link rel="stylesheet" href="css/ieAlpha.css" />
+			
+			<![endif]-->				
+			
+		<style>
+			@import url("scripts/external/jquery/fancybox/jquery.fancybox.css");
+			@import url("scripts/external/jquery/fancybox/helpers/jquery.fancybox-buttons.css");
+			@import url("scripts/external/jquery/fancybox/helpers/jquery.fancybox-thumbs.css");
+
+			@import url("scripts/external/jquery/tooltipster/css/tooltipster.css");
+			@import url("scripts/external/jquery/tooltipster/css/themes/tooltipster-light.css");
+			@import url("scripts/external/jquery/tooltipster/css/themes/tooltipster-noir.css");
+			@import url("scripts/external/jquery/tooltipster/css/themes/tooltipster-punk.css");
+			@import url("scripts/external/jquery/tooltipster/css/themes/tooltipster-shadow.css");
+
+			@import url("css/claro.cssFx.css");
+			@import url("css/endscreens.css");
+			@import url("css/certificate.css") all;
+			@import url("css/certificate-print.css") print;
+			@import url("css/transitions.css");
+			@import url("css/player-core.css");
+			@import url("css/base.css");
+			@import url("css/glossary.css");
+			@import url("css/authoring-buttons.css");
+			@import url("css/player-print.css") print;
+			@import url("css/jsonSearch.css");
+			@import url("css/resources.css");
+			@import url("css/reference.css");
+			@import url("css/courseSearch.css");
+			@import url("css/jquery-ui-1.10.3.custom.min.css");
+
+			
+			@import url("css/icons/css/font-awesome.min.css");
+			@import url("css/dki-marker.css");
+			@import url("css/jplayer/dkMedia/dkMedia.css");
+		</style>
+	
+			<link rel="stylesheet" href="design/player.css" />
+			<link rel="stylesheet" href="design/design.css" />
+			
+				<link rel="stylesheet" href="design/theme.css" />
+			
+			<style>				
+				
+					body, .bgRepeater {width:1010px}
+					#headerContainer, #footerContainer { width:1010px;}
+					body.online #contentFrame { 
+						width:1010px;
+						height:600px;
+						
+					}
+					
+				
+
+				body.online { 
+					overflow: hidden;
+				}
+				
+						body.online #contentFrame .dkiContentFrame { 
+							overflow-y: auto;
+							overflow-x: auto;
+						}
+					
+				body.mobile #contentFrame { 
+					width:1010px;
+					min-height:600px;
+					height:auto;					
+				}
+				/* In top-bar layout, footer needs to have a height of 0 */
+				body.mobile #footerContainer {height:0px;}
+				.dkiContentFrame{height:600px;}	
+				
+				/* if we have a no nav bars course, we need to hide and shrink the nav bas */						
+				
+					#headerContainer, #footerContainer {
+						height: 0px !important;
+						display: none !important;
+					}
+					#contentFrame{
+						margin-top: 0px !important;
+					}
+					body.mobile .reviewerTab{
+						top: 0px !important;
+					}
+				
+			</style>
+			<!--[if lte IE 7]>
+				<style>
+					.dkiContentFrame{
+						overflow-y: auto;
+						overflow-x: hidden;
+					}
+					body.mobile #contentFrame{
+						margin-top: 0px !important;
+					}
+					/*need to fix lists in ie7.. doesnt support inherit*/
+					.dki-authoring-element ul li{
+						list-style-type: disc;
+					}
+					.dki-authoring-element ol li{
+						list-style-type: decimal;
+					}
+					.dki-table-element span, .dki-htm-element span{
+						line-height: normal !important;
+					}
+					
+					
+				</style>
+			<![endif]-->
+			
+			<!--[if lte IE 8]>
+				<style>
+					
+				</style>
+			<![endif]-->
+			<title>Course Player</title>
+			<script src="scripts/dkiUA.js"></script>			
+									
+		</head>
+		<body class="online">
+			
+			<div id="headerContainer" role="navigation"></div>
+			
+			<div class="bgRepeater">
+				<div id="contentFrame">
+					<div id='page_52542' class='design pageElementsWrapper' data-pagetype='page' data-pageid='52542' data-locked='0' data-preview='false' style='z-index:0;' ></div>
+				</div>
+				
+			</div>
+			<a class="submitButton " style="display:none">
+				<span class="buttonPartial left"></span>
+				<span class="buttonPartial middle">Submit</span>
+				<span class="buttonPartial right"></span>
+			</a>
+			<div class="content questionScoreDisplay" style="display:none">
+				Score: <span class="questionScore"></span>
+			</div>
+			<div id="footerContainer" role="navigation"></div>
+					
+			
+			<div id="westPanel" class="menu dki-WestPanel hidden">
+				<div class="menuHeader">
+					<ul id="menuTabs" class="menuTabs tabStrip" role="tablist">
+						<li id="outlineTab" class="tab" data-contentid="outlineContent" role="tab" aria-controls="outlineContent" tabIndex="0">
+							<a>Outline</a>
+						</li>
+					</ul>
+					<a class="courseSearchOpen headerButton" tabIndex="0" role="button" title="Course Search"></a>
+					<a class="buttonClose headerButton" tabIndex="0" role="button" title="Close"></a>
+				</div>
+				<div id="outlineContent" class="innerBlockScroll" role="tabpanel">
+				</div>
+			</div>
+			
+			
+			
+			<script src="scripts/modernizr.js"></script>
+			<script src="scripts/external/jquery/jquery.js"></script>
+			<script src="scripts/external/jquery/velocity.min.js"></script>
+			<script src="scripts/external/jquery/jplayer/jquery.jplayer.min.js"></script>
+			<script src="scripts/external/jquery/reflection.js"></script>
+			<script src="scripts/external/jquery/jqueryui.js"></script>
+			<script src="scripts/external/jquery/touch.js"></script>
+			<script src="scripts/external/jquery/effects.js"></script>
+			<script src="scripts/external/raphael/raphael.js"></script>
+			<script src="scripts/external/json2.js"></script>
+			<script src="scripts/external/swfobject/swfobject.js"></script>
+			<script src="scripts/external/handlebars/handlebars.js"></script>
+			<script src="scripts/templates/templates.js"></script>
+			<script type="text/javascript">
+				//case 33420: we need to call this for IE so we can remove/reattach swfs in our content pages when they reset & start
+				if (dkiUA.ie) {
+					swfobject.switchOffAutoHideShow();
+				}
+			</script>		
+			<script src="scripts/external/jquery/jquery.event.drag/jquery.event.drag.min.js"></script>			
+			
+			<script src="scripts/external/jquery/fancybox/jquery.fancybox.pack.js"></script>
+			<script src="scripts/external/jquery/fancybox/helpers/jquery.fancybox-buttons.js"></script>
+			<script src="scripts/external/jquery/fancybox/helpers/jquery.fancybox-media.js"></script>
+			<script src="scripts/external/jquery/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+			<script src="scripts/external/jquery/tooltipster/js/jquery.tooltipster.min.js"></script>
+			<script>	
+				Modernizr.addTest("position-fixed", function (){
+					var container = document.body;
+					
+					if (document.createElement && container && container.appendChild && container.removeChild) {
+						var el = document.createElement('div');
+						
+						if (!el.getBoundingClientRect) return null;
+						
+						el.innerHTML = 'x';
+						el.style.cssText = 'position:fixed;top:100px;';
+						container.appendChild(el);
+						
+						var originalHeight = container.style.height,
+							originalScrollTop = container.scrollTop;
+						
+						container.style.height = '3000px';
+						container.scrollTop = 500;
+						
+						var elementTop = parseInt(el.getBoundingClientRect().top, 10);
+						container.style.height = originalHeight;
+						
+						var isSupported = (elementTop === 100);
+						container.removeChild(el);
+						container.scrollTop = originalScrollTop;
+						//cant support fixed on iOS 4 yet
+						if(dkiUA.iOS && dkiUA.iOSVersion < 5){
+							isSupported = false;
+						}
+						else if(dkiUA.ie && dkiUA.ieVersion <= 8){
+							isSupported = false;
+						}
+						else if(dkiUA.android && dkiUA.androidVersion < 4.2){
+							isSupported = false;
+						}
+						return isSupported;
+					}
+					return null;
+				});
+				if(dkiUA.mobile && dkiUA.android && !dkiUA.chrome)	{
+					$("html").removeClass("csstransforms3d");
+					$("html").addClass("no-csstransforms3d");
+					$("html").removeClass("csstransforms");				
+					$("html").addClass("no-csstransforms");
+					$("html").removeClass("csstransitions");				
+					$("html").addClass("no-csstransitions");				
+				}
+				//override default confirm.
+				if(!dkiUA.mobile && (dkiUA.firefox || dkiUA.safari)){
+					(function(window){
+					    var _confirm = window.confirm;
+					    window.confirm = function(msg){
+					      var keyupCanceler = function(ev){
+					          ev.stopPropagation();
+					          return false;
+					      };
+					      document.addEventListener("keyup", keyupCanceler, true);
+					      var retVal = _confirm(msg);
+					      setTimeout(function(){
+					        document.removeEventListener("keyup", keyupCanceler, true);
+					      }, 150); // Giving enough time to fire event
+					      return retVal;
+					    };
+					  })(window);
+				}
+				document.createElement("claro_style");
+				var clickEvent = dkiUA.touchEnabled? "singleTap" : "click";
+				//Case 28276: Blackberry requires us to use click events for their silly click-pad.
+				if(dkiUA.blackberry || (dkiUA.windows && dkiUA.windowsVersion > 6.1)){
+					clickEvent = "click";
+				}
+				$("html").on("keyup", "a:not([tabindex]), *[tabindex]", function(e){					
+					if(e.which == 13 || e.which == 32){//Enter pressed
+						$(this).trigger(settings.clickEvent);
+						e.stopPropagation();
+						e.preventDefault();
+						return false;
+					}
+				});
+				
+				var settings = {
+					templates : DKI.templates,
+					inPreview: false,
+					assetURL: 'assets/',
+					CSSROOT : 'css/',
+					swfPath: 'scripts/external/jquery/jplayer',
+					scrolling: false,
+					courseHeight: 600,
+					courseType : 3,
+					nativeVideoControls : {
+						iphone: /iphone/,
+						ipod: /ipod/,
+						android_pad: /Android/i,
+						android_phone: /Android/i,
+						blackberry: /blackberry/,
+						windows_ce: /windows ce/,
+						webos: /webos/
+					},
+					clickEvent: clickEvent
+					
+						,contentURL: "content/"
+						,endModURL: "endmodinform.html"
+						,endCourseURL: "endcrsinform.html"
+						,endTestURL: "endtestinform.html"
+						,certificateURL: "certificate.html"
+						,actionsURL: "content/"
+						,browserWarningURL: "browserWarning.html"
+						,actionsPrefix: "_actions.js"
+					
+				};
+				
+					settings.scrolling = true;
+				
+				settings.responsive = false;
+				settings.enablePlugins = false;
+				var headerTemplate = Handlebars.compile(DKI.templates.header)({strings : DKI.strings});
+				$("#headerContainer").html(headerTemplate);
+				var footerTemplate = Handlebars.compile(DKI.templates.footer)({strings : DKI.strings});
+				$("#footerContainer").html(footerTemplate);
+			</script>
+			<script src="scripts/external/rAF.min.js"></script>
+			<script src="scripts/utility.js"></script>
+			<script src="scripts/dki.uri.js"></script>
+			<script src="scripts/dkiFunction.js"></script>
+			<script src="scripts/courseStore.js"></script>
+			<script src="scripts/content.js"></script>
+			<script src="scripts/test.js"></script>
+			<script src="scripts/element.js"></script>
+			<script src="scripts/scene.js"></script>
+			<script src="scripts/external/jquery/jquery.class.min.js"></script>
+			<script src="scripts/external/lunr/lunr-min.js"></script>
+			<script src="scripts/endmod.js"></script>
+			<script src="scripts/endtest.js"></script>
+			<script src="scripts/endcourse.js"></script>
+			<script src="scripts/certificate.js"></script>
+			<script src="scripts/persistantModal.js"></script>
+			<script src="scripts/popupPanel.js"></script>
+			<script src="scripts/presentation.js"></script>
+			<script src="scripts/feedbackPanel.js"></script>
+			<script src="scripts/dataStorage.js"></script>
+			<script src="scripts/menu.js"></script>
+			<script src="scripts/tabs.js"></script>
+			<script src="scripts/tree.js"></script>
+			<script src="scripts/assessment.js"></script>
+			<script src="scripts/review.js"></script>
+			
+			<script src="scripts/prompt.js"></script>
+			<script src="scripts/contentApi.js"></script>
+			<script src="scripts/navigation.js"></script>
+			<script src="scripts/marker.js"></script>		
+			<script src="scripts/browserWarning.js"></script>
+			<script src="scripts/glossary.js"></script>
+			<script src="scripts/reference.js"></script>
+			<script src="scripts/glossaryBrowse.js"></script>
+			<script src="scripts/jsonSearch.js"></script>
+			<script src="scripts/resourceBrowser.js"></script>
+			<script src="scripts/dkiDisabler.js"></script>
+			<script src="scripts/searchManager.js"></script>
+			<script src="scripts/searchUI.js"></script>
+			<script>
+				//Start up the course with a disabler.
+				var preLoadDisabler = new DKI.disabler({showSpinner:true});
+				preLoadDisabler.show();
+				$(document).on(DKI.ContentPage.events.started, function(){preLoadDisabler.hide();});
+				//case 32813: in assessment only courses, we launch directly to the end screens when resuming.. we need to hide the disabler in that case too.
+				$(document).on(DKI.EndCourse.events.started, function(){preLoadDisabler.hide();});
+				$(document).on(DKI.EndModule.events.started, function(){preLoadDisabler.hide();});
+				$(document).on(DKI.EndTest.events.started, function(){preLoadDisabler.hide();});						
+			</script>
+			
+				<script src="courseStructure.js"></script>
+				<script src="behaviour.js"></script>
+				<script src="glossary.js"></script>
+				<script src="resources.js"></script>
+				<script src="actions.js"></script>
+				<script src="references.js"></script>
+				<script src="documentVersion.js"></script>
+				<script src="assets.js"></script>
+						
+				<script>
+					var scormAPI;		
+					
+					var dataStorage = new DKI.DataStorage(courseStructure, playerBehaviour, playerStrings);
+					
+				</script>
+			
+			
+			<script>				
+				var player = new DKI.PresentationPlayer({
+					dataStorage: dataStorage, 
+					behaviour: playerBehaviour, 
+					settings: settings,
+					strings: playerStrings,
+					rootURL: DKI.determineRoot() 
+				});
+				contentApi.DkiApi.init(player, scormAPI);			
+				player.contentAPI = contentApi;				
+				
+				function submit(questionObject) {
+					player.submitQuestion(questionObject);
+				};
+
+				function setQuestionPage(questionPage) {
+					player.questionPage = questionPage;
+				};
+
+				function onFeedbackClose() {
+					player.onQuestionFeedbackClosed();
+				};
+
+				function setContentFunctions (functionObject) {
+					player.contentFunctions = functionObject;
+				}
+							
+				window.scrollTo(0,0);
+				
+			</script>
+			<!--[if lte IE 8]>
+				<script src="scripts/ieSelectFix.js"></script>
+			<![endif]-->
+
+			<script>
+				$(dataStorage).on(DKI.DataStorage.events.beforeReady, function () {
+					DKI.browserWarning.init(playerBehaviour);
+					//We init search first; it needs to subscribe to the registry events fired by the subsequent classes 
+						DKI.search.Window.init({
+							documentVersion: DKI.documentVersion,
+							settings: settings,
+							languageString : DKI.strings.courseSearch
+						});
+						DKI.glossaryBrowse.initialize({
+							terms: DKI.terms,
+							settings : settings,
+							languageStrings : DKI.strings.glossary
+						});
+						DKI.glossary.init({
+							terms: DKI.glossaryBrowse.getTerms(),
+							settings: settings,
+							languageString : DKI.strings.glossary
+						});
+						DKI.reference = DKI.Reference.playerReferenceUIInterface;
+						DKI.reference.init({
+							references: DKI.references,
+							settings: settings,
+							languageString : DKI.strings.references
+						});
+						DKI.resourceBrowser.init({
+							resources: DKI.resources,
+							actions: DKI.Actions,
+							documentVersion: DKI.documentVersion,
+							settings: settings,
+							languageString : DKI.strings.resources
+						});
+					
+				});
+				player.loadCompletion();
+			</script>
+			
+				<script src="design/resources/theme.js"></script>
+				<script>
+					window.theme = new Theme({
+						contentAPI: contentApi,
+						themeRoot: 'design/',
+						settings : settings					
+					});
+				</script>	
+			
+		</body>
+	</html>
+	

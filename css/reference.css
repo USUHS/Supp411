@@ -1,0 +1,105 @@
+#referencePopup {
+	width: 250px;
+}
+#referencePopup .popupContent {
+	padding-top: 5px;
+	line-height: 1em;
+}
+
+#referencePopup span.refNum,
+#glossaryPopup span.refNum {
+	font-weight:bold;
+	text-decoration: underline;
+	font-size: 1.1em;
+}
+#referencePopup #viewBibliographyLink {
+	background-image: url(../images/referenceIcon.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	margin: 1px;
+	width: 25px;
+	height: 25px;
+	margin: 3px 1px 3px 10px;
+	display: block;
+	cursor: pointer;
+	float:left;
+}
+
+#referencePopup div.nav {
+	display: block;
+	float: right;
+	margin: 3px 5px 3px 10px;
+	height: 26px;
+}
+#referencePopup div.nav span{
+	display:inline-block;
+}
+#referencePopup div.nav span.counter{
+	margin: 0px 3px;
+	vertical-align:top;
+	line-height: 26px;
+}
+
+#referencePopup div.nav span.citationNav{
+	cursor: pointer;
+	width:26px;
+	height:26px;
+	background-image: url(../images/reference_sprites.png);
+	background-repeat: no-repeat;
+}
+
+#referencePopup div.nav span.previous{background-position:0px 0px;}
+#referencePopup div.nav span.next{background-position: -26px 0px;}
+#referencePopup div.nav span.previous.disable{background-position:0px -26px;}
+#referencePopup div.nav span.next.disable{background-position: -26px -26px;}
+
+
+#referencePopup #viewBibliographyLink:hover {
+	margin: 2px 0px 2px 9px;
+	border: 1px solid #333;
+	border-radius: 3px;
+}
+
+
+#bibliographyContainer #bibliographyContentContainer ul {
+	list-style-type: none;
+	font-size: 1em;
+	width: 95%;
+	margin : 0 auto;
+}
+#bibliographyContainer #bibliographyContentContainer li {
+	margin-top: 10px;
+	line-height: 1.2em;
+	border-bottom: 1px solid #AAA;
+	padding-bottom: 10px;
+}
+#bibliographyContainer #bibliographyContentContainer li span.refIndex {
+	font-weight:bold;
+}
+#bibliographyContainer #bibliographyContentContainer {
+	overflow-y: scroll;
+	width:100%;
+	height: auto;
+	position:absolute;
+	top:24px;
+	bottom:3px;
+}
+.responsive #bibliographyContainer {
+	height: auto;
+	min-height: 300px;
+}
+#bibliographyContainer {
+	width: 90%;
+	max-height: 500px;
+	margin-left:5%;
+	margin-right: 5%;
+	left: auto;
+}
+#bibliographyContainer .browserCloseButton {
+	float:right;
+	position: static;
+	margin-right: 5px;
+
+}
+
+

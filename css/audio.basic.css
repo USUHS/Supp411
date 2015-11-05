@@ -1,0 +1,24 @@
+.dki-audio-basic, .dki-audio-basic-placeholder {
+	background-image: url(../images/basicAudioPlayer.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor: pointer;
+}
+
+.dki-audio-basic.playing, .dki-audio-basic-placeholder.playing {
+	background-image: url(../images/basicAudioPlayer-activated.png)
+}
+
+a.dki-audio-basic {
+	display: block;
+	height: 25px;
+	width: 25px;
+}
+
+.dki-audio-basic div, .dki-audio-basic div object, .dki-audio-basic div audio {
+	visibility: hidden;
+}
+
+.dki-audio-basic div audio {
+	opacity: 0.0;
+}

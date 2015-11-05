@@ -1,0 +1,145 @@
+/**
+ * 	Classes to support the DKI.PlayerTree singletong
+ * 	@version	1.0
+ * 	@author		Keith Chadwick
+ * 	@namespace	dki-playterTree
+ */
+
+.dki-PlayerTree{
+	background-image: url(../images/transparent.gif);
+	background-repeat: repeat;
+}
+
+.dki-PlayerTree div.treeNode {
+	width			: 100%;
+	white-space		: nowrap;
+	overflow 		: hidden;
+	display 		: block;
+	padding 		: 0px 0px 0px 0px !important
+}
+
+.dki-PlayerTree div.collapse div.treeNode{display:none}
+
+.dki-PlayerTree div.treeNode a {	
+	display 			: block;
+	padding-bottom 		: 3px;
+	border-bottom		: 1px solid #DDD;
+	margin-bottom		: 3px;
+	height: 40px;
+	line-height: 40px;	
+}
+
+.dki-PlayerTree div.treeNode a span {	
+	cursor 				: pointer;
+	text-decoration		: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.dki-PlayerTree div.treeNode a.active{
+	font-weight 		: bold
+}
+
+.dki-PlayerTree div.page a.selected, .dki-PlayerTree .object a.selected {
+	color 			: #333333;	
+	background-color: #D1DEF3;
+}
+
+.dki-PlayerTree div.disabled a{
+	cursor:default
+}
+.dki-PlayerTree div.disabled a span{
+	opacity : .5;
+	cursor:default
+}
+
+html.ltr .dki-PlayerTree div.module a{
+	padding-left: 16px;
+}
+
+html.ltr .dki-PlayerTree div.object a{
+	padding-left: 32px;
+}
+
+html.ltr .dki-PlayerTree div.page a{
+	padding-left: 60px;
+}
+
+html.rtl .dki-PlayerTree div.module a{
+	padding-right: 16px;
+}
+
+html.rtl .dki-PlayerTree div.object a{
+	padding-right: 32px;
+}
+
+html.rtl .dki-PlayerTree div.page a{
+	padding-right: 60px;
+}
+
+.dki-PlayerTree div.treeNode span.label{
+	padding-left: 3px;
+	line-height: 1.5;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.dki-PlayerTree div.course span.label{
+	width: 245px;
+}
+
+.dki-PlayerTree div.module span.label{
+	width: 229px;
+}
+
+.dki-PlayerTree div.object span.label{
+	width: 213px;
+}
+
+.dki-PlayerTree div.page span.label{
+	width: 197px;
+}
+
+/*     ICONS!!!    ... yeah thats a little enthusiastic but I'm excited.*/
+.dki-PlayerTree div.treeNode span.tree-icon{
+	background-image: url(../images/playerTreeSprite.png);
+	background-repeat: no-repeat;
+	width: 14px;
+	height: 12px;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.dki-PlayerTree div.treeNode span.tree-icon.collapse{
+	background-position: 0px -48px;
+}
+
+.dki-PlayerTree div.treeNode.collapse span.tree-icon.collapse{
+	background-position: 0px -60px;
+}
+
+/*no collapse icon if were hiding pages*/
+.dki-PlayerTree div.object.pagesHidden span.tree-icon.collapse{
+	background: none;
+}
+
+.dki-PlayerTree div.treeNode a.finished span.tree-icon.status{
+	background-position: 0px -24px;
+}
+
+.dki-PlayerTree div.treeNode a.unstarted span.tree-icon.status{
+	background-position: 0px -36px;
+}
+
+.dki-PlayerTree div.treeNode a.started span.tree-icon.status{
+	background-position: 0px 0px;
+}
+
+html.ltr .dki-PlayerTree div.treeNode a.selected span.tree-icon.status{
+	background-position: 0px -72px;
+}
+
+
+
+

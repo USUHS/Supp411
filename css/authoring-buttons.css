@@ -1,0 +1,460 @@
+/* @group Buttons Library Styles
+----------------------------------------------- */
+
+/* DEFAULT STYLING */
+
+.dki-authoring-button {
+
+	font: bold 13px/1.6em;
+	color: white;
+	text-decoration: none;
+	
+	text-shadow: 0 1px 0 rgba(0,0,0,.4);
+	
+	display: block;
+	display: inline-block;
+	
+	text-align: center;
+	vertical-align: middle;
+	border: none;
+			
+	
+	
+	-webkit-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), inset 0 2px 0 rgba(255,255,255,.25);
+	-moz-box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), inset 0 2px 0 rgba(255,255,255,.25);
+	box-shadow: inset 0 0 0 1px rgba(0,0,0,0.2), inset 0 2px 0 rgba(255,255,255,.25);
+	
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding-box;
+	background-clip: padding-box;
+	
+}
+
+.dki-authoring-button.rounded{
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.dki-authoring-button.circle{
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+}
+html.no-touch .dki-authoring-button:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.dki-authoring-button:active {
+	-webkit-box-shadow: inset 0 100% 0 0 rgba(0,0,0,0.2);
+}
+
+	/* @group Colors
+	----------------------------------------------- */
+	
+	/* RED */
+	
+	.dki-authoring-button.red {
+		background: #c64249;
+		background: #c64249 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #c64249 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.red:hover {
+		background: #c64249 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #c64249 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.red:active {
+		background: #c64249 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #c64249 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* ORANGE */
+	
+	.dki-authoring-button.orange {
+		background: #d36221;
+		background: #d36221 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #d36221 -moz-linear-gradient( top, rgba(255,255,255,.4),rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.orange:hover {
+		background: #d36221 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #d36221 -moz-linear-gradient( top, rgba(255,255,255,.55),rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.orange:active {
+		background: #d36221 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #d36221 -moz-linear-gradient( top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	}
+		
+	/* WOODY */
+		
+	.dki-authoring-button.woody {
+		background: #d99734;
+		background: #d99734 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #d99734 -moz-linear-gradient( top, rgba(255,255,255,.4),rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.woody:hover {
+		background: #d99734 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #d99734 -moz-linear-gradient( top, rgba(255,255,255,.55),rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.woody:active {
+		background: #d99734 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #d99734 -moz-linear-gradient( top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	}
+	
+	/* HOT PINK */
+	
+	.dki-authoring-button.pink {
+		background: #d93880;
+		background: #d93880 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #d93880 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.pink:hover {
+		background: #d93880;
+		background: #d93880 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #d93880 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.pink:active {
+		background: #d93880 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #d93880 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	
+	
+	/* GRAPHITE */
+	
+	.dki-authoring-button.graphite {
+		background: #6f7f8d;
+		background: #6f7f8d -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #6f7f8d -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.graphite:hover {
+		background: #6f7f8d -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #6f7f8d -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.graphite:active {
+		background: #6f7f8d -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #6f7f8d -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* TURQUOISE */
+	
+	.dki-authoring-button.turquoise {
+		background: #3ab29e;
+		background: #3ab29e -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #3ab29e -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.turquoise:hover {
+		background: #3ab29e -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #3ab29e -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.turquoise:active {
+		background: #3ab29e -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #3ab29e -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* EMERALD */
+		
+	.dki-authoring-button.emerald {
+		background: #4fbb6c;
+		background: #4fbb6c -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #4fbb6c -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.emerald:hover {
+		background: #4fbb6c -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #4fbb6c -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.emerald:active {
+		background: #4fbb6c -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #4fbb6c -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* GRASS */
+		
+	.dki-authoring-button.grass {
+		background: #475311;
+		background: #475311 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #475311 -moz-linear-gradient( top, rgba(255,255,255,.4),rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.grass:hover {
+		background: #475311 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #475311 -moz-linear-gradient( top, rgba(255,255,255,.55),rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.grass:active {
+		background: #475311 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #475311 -moz-linear-gradient( top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	}
+
+	/* BLUE */
+		
+	.dki-authoring-button.blue {
+		background: #3d67a6;
+		background: #3d67a6 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #3d67a6 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.blue:hover {
+		background: #3d67a6 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #3d67a6 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.blue:active {
+		background: #3d67a6 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #3d67a6 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* ROYAL BLUE */
+	
+	.dki-authoring-button.royalblue {
+		background: #4099c5;
+		background: #4099c5 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #4099c5 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.royalblue:hover {
+		background: #4099c5 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #4099c5 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.royalblue:active {
+		background: #4099c5 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #4099c5 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+		
+	/* BROWN */
+	
+	.dki-authoring-button.brown {
+		background: #c57c40;
+		background: #c57c40 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #c57c40 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.brown:hover {
+		background: #c57c40 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #c57c40 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.brown:active {
+		background: #c57c40 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #c57c40 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* DARK BROWN */
+		
+	.dki-authoring-button.darkbrown {
+		background: #532611;
+		background: #532611 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #532611 -moz-linear-gradient( top, rgba(255,255,255,.4),rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.darkbrown:hover {
+		background: #532611 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #532611 -moz-linear-gradient( top, rgba(255,255,255,.55),rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.darkbrown:active {
+		background: #532611 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #532611 -moz-linear-gradient( top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	}
+	
+	/* MINT */
+	
+	.dki-authoring-button.mint {
+		background: #a5cb3a;
+		background: #a5cb3a -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #a5cb3a -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.mint:hover {
+		background: #a5cb3a -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #a5cb3a -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.mint:active {
+		background: #a5cb3a -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #a5cb3a -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* GRAPE */
+	
+	.dki-authoring-button.grape {
+		background: #8d6b85;
+		background: #8d6b85 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #8d6b85 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.grape:hover {
+		background: #8d6b85 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #8d6b85 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.grape:active {
+		background: #8d6b85 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #8d6b85 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* MAGENTA */
+	
+	.dki-authoring-button.magenta {
+		background: #c642a2;
+		background: #c642a2 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #c642a2 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.magenta:hover {
+		background: #c642a2 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #c642a2 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.magenta:active {
+		background: #c642a2 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #c642a2 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+		
+	/* PURPLE */
+	
+	.dki-authoring-button.purple {
+		background: #5c3bbc;
+		background: #5c3bbc -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #5c3bbc -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.purple:hover {
+		background: #5c3bbc -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #5c3bbc -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.purple:active {
+		background: #5c3bbc -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #5c3bbc -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* DARK GREY */
+		
+	.dki-authoring-button.darkgrey {
+		background: #707070;
+		background: #707070 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #707070 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.darkgrey:hover {
+		background: #707070 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #707070 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.darkgrey:active {
+		background: #707070 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #707070 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* SILVER */
+		
+	.dki-authoring-button.silver {
+		background: #c4c4c4;
+		background: #c4c4c4 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #c4c4c4 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.silver:hover {
+		background: #c4c4c4 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #c4c4c4 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.silver:active {
+		background: #c4c4c4 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #c4c4c4 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+
+	
+	/* GOLDEN */
+	
+	.dki-authoring-button.golden {
+		background: #c5ab43;
+		background: #c5ab43 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #c5ab43 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.golden:hover {
+		background: #c5ab43 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #c5ab43 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.golden:active {
+		background: #c5ab43 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #c5ab43 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* BLACK */
+		
+	.dki-authoring-button.black {
+		background: #1a1a1a;
+		background: #1a1a1a -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #1a1a1a -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.black:hover {
+		background: #1a1a1a -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #1a1a1a -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.black:active {
+		background: #1a1a1a -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #1a1a1a -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+	
+	/* WHITE */
+		
+	.dki-authoring-button.white {
+		color: #1a1a1a;
+		text-shadow: 0 0 1px white;
+		
+		background: #f9f9f9;
+		background: #f9f9f9 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.2)),to(rgba(0,0,0,0)));
+		background: #f9f9f9 -moz-linear-gradient( top, rgba(255,255,255,.4), rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.white:hover {
+		background: #f9f9f9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #f9f9f9 -moz-linear-gradient( top, rgba(255,255,255,.55), rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.white:active {
+		background: #f9f9f9 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #f9f9f9 -moz-linear-gradient( top, rgba(0,0,0,.1), rgba(0,0,0,0));
+	}
+
+	/* CYAN */
+		
+	.dki-authoring-button.cyan {
+		background: #5acbe1;
+		background: #5acbe1 -webkit-gradient( linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.4)),to(rgba(0,0,0,0)));
+		background: #5acbe1 -moz-linear-gradient( top, rgba(255,255,255,.4),rgba(0,0,0,0));	
+	}
+	
+	html.no-touch .dki-authoring-button.cyan:hover {
+		background: #5acbe1 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.55)), to(rgba(0,0,0,0)));
+		background: #5acbe1 -moz-linear-gradient( top, rgba(255,255,255,.55),rgba(0,0,0,0));
+	}
+	
+	.dki-authoring-button.cyan:active {
+		background: #5acbe1 -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(0,0,0,.3)), to(rgba(0,0,0,0)));
+		background: #5acbe1 -moz-linear-gradient( top,rgba(0,0,0,.1),rgba(0,0,0,0));
+	}
+
+	/* @end */
+	
+/* @end */

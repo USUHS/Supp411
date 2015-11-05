@@ -1,0 +1,11 @@
+#certificate_signature{
+	text-align: left;
+	left: 10px;
+	bottom: 40px;
+}
+#certificate_signature span{
+	width: 200px;
+}
+#certificate_date{
+	bottom: 10px;
+}

@@ -1,0 +1,315 @@
+
+.popupContent {
+	padding-left:5%;
+	margin: 5px 0px;
+	padding-bottom: 5px;
+	width: 90% !important;
+	overflow-x:auto;
+
+}
+
+#glossaryPopup div.glossaryPopupBody,
+#glossaryPopup div.glossaryPopupBody div{
+	width : 100%;
+}
+
+
+#glossaryHoverDefinition {
+	padding: 5px 5px;
+	z-index:1;	
+	display:none;
+	box-shadow: 5px 5px 10px -3px #333;
+ 	-webkit-box-shadow: 5px 5px 10px -3px #333;
+ 	-moz-box-shadow: 5px 5px 10px -3px #333;
+}
+
+.popupWindow {
+	background-color: #F2F2F2;
+	border: 1px solid #BFBFBF;
+	border-radius: 8px;	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	position: absolute;	
+	color: #444;
+	position: absolute;
+	z-index:1;	
+	box-shadow: 10px 10px 15px -5px #333;
+ 	-webkit-box-shadow: 10px 10px 15px -5px #333;
+ 	-moz-box-shadow: 10px 10px 15px -5px #333;
+}
+#glossaryPopup {
+	width: 250px;
+}
+
+.glossaryPopupHeader {
+	margin: 0px 10px 5px 10px;
+	height: 28px;
+	padding-top:5px;
+	cursor:default;
+}
+
+#glossaryPopupPronunciation div.jp-controls-holder {
+	height: auto !important;
+}
+
+.dki-glossary-link {
+	border-radius: 5px;	
+}
+
+.dki-glossary-link.over{
+	background: #f5ee13; /* Old browsers */
+	background: -moz-linear-gradient(top, #f5ee13 0%, #eccf03 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5ee13), color-stop(100%,#eccf03)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f5ee13 0%,#eccf03 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f5ee13 0%,#eccf03 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f5ee13 0%,#eccf03 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f5ee13 0%,#eccf03 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5ee13', endColorstr='#eccf03',GradientType=0 ); /* IE6-9 */
+}
+
+.dki-glossary-link.untranslated.over{
+	background: #e55457; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iI2U1NTQ1NyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlZDk3OWUiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top,  #e55457 1%, #ed979e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#e55457), color-stop(100%,#ed979e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e55457 1%,#ed979e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e55457 1%,#ed979e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e55457 1%,#ed979e 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e55457 1%,#ed979e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55457', endColorstr='#ed979e',GradientType=0 ); /* IE6-8 */
+}
+
+#glossaryPopupPronunciation{
+	float:left;
+	width: 25px;
+	height:25px;
+	vertical-align: middle;
+	margin-left: 10px;
+}
+
+#glossaryPopupTerm{
+	font-size: 16px;
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: middle;
+	margin-top:5px;
+	float:left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+}
+#glossaryPopupDefinitionContainer{
+	font-size: 14px;
+	display: inline-block;
+	line-height: 15px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-height: 150px;
+	margin: 5px 0px;
+}
+
+ div.sectionBreak {
+	margin-left: 10px;
+	width: 90% !important;
+	border:0;
+	border-top: 1px solid #ccc;
+}
+
+.browserCloseButton  {
+	background-image: url(../images/close_x.png);
+	background-repeat: no-repeat;
+	width: 28px;
+	height: 23px;
+	cursor: pointer;
+	position:absolute;
+	right: 5px;
+	float:right;
+}
+.glossaryCloseButton{
+	background-image: url(../images/glossaryClose.png);
+	background-repeat: no-repeat;
+	background-position: top right;
+	width: 26px;
+	height: 26px;
+	position: absolute;
+	top: -13px;
+	right: -13px;
+	cursor: pointer;
+}
+
+
+
+#glossaryBrowseContainer {
+	margin: 0 auto;
+	width: 770px;
+	height: 500px;
+	top: 50px;
+	left: 50%;
+	margin-left: -40%;
+}
+
+
+#glossaryBrowserContainer input.searchInput {
+	width: 140px;
+	font-size: 12px;
+	border: none;
+	border-radius: 5px;	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	float:left;
+	background-color:white;
+}
+
+.windowContainer div.loading, #glossaryPopup.loading,
+.viewContainer div.loading{
+	opacity:0;
+	filter: alpha(opacity = 0);
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+}
+
+
+#glossaryBrowserContainer .browserList ul li {
+ padding: 3px 0px 3px 10px;
+ cursor:pointer;
+ margin: 5px 0px;
+ list-style-type : none;
+}
+
+
+#back {
+	cursor: pointer;
+}
+#termUl {
+	margin-left:0px;
+}
+#termDetails #term {
+	font-weight: bold;
+	margin: 5px 10px 7px 0px;
+	font-size:16px;
+}
+ #termDetails div.detailsContent #definition,
+ #termDetails div.detailsContent #attribution {
+	width: 100%;
+	margin: 7px 0px;
+}
+
+#termDetails #term,
+#termDetails #glossaryManagePronunciation {
+	float:left;
+}
+
+#viewBrowserLink {
+	background-image:url(../images/glossaryIcon.png);
+	background-repeat: no-repeat;
+	background-position:5px center;
+	margin: 1px;
+	width:25px;
+	height:25px;
+	margin: 6px 1px 1px 6px;
+	display:block;
+}
+
+#viewBrowserLink:hover {
+	margin: 5px 0px 0px 5px;
+	border: 1px solid #333;
+	border-radius: 3px;
+
+}
+
+
+
+
+.online div.detailsContent,
+.tablet div.detailsContent{
+}
+
+
+div.windowContainer.phone .panel,
+div.viewContainer.phone .panel {
+	width: 254px !important;
+	height: 100%;
+}
+.phone #glossaryContentContainer {
+	width: 548px;
+	top:70px;
+}
+
+div.windowContainer.phone,
+div.viewContainer.phone {
+	width: 275px;
+	height: 450px;
+	font-size: 20px;
+}	
+.phone #glossaryPopup {
+	width: 180px;
+}
+
+.phone div.windowContainer,
+.phone div.viewContainer {
+	margin-left: 15px;
+}
+
+.phone div.detailsContent {
+	width: 100%;
+}
+
+.phone div.browserList {
+	border: none;
+}
+
+.phone div.windowContainer div.searchContainer,
+.phone div.viewContainer div.searchContainer {
+	padding: 6px 0px 0px 10px;	
+}
+
+.phone #glossaryBrowserContainer div.searchContainer input, {
+	width: 150px;
+	margin: 0px;
+}
+
+.phone #browserHeader {
+	margin-bottom: 10px;
+}
+
+.phone div.windowContainer div.sectionBreak,
+.phone div.viewContainer div.sectionBreak {
+	width: 246px !important;
+}
+
+.navHidden div.windowContainer,
+.navHidden div.viewContainer {
+	top: 10px;
+}
+
+.phone .browserCloseButton {
+	left: 240px;
+}
+
+#termUl li {
+	margin-left: 15px;
+}
+#termUl li.mobile {
+	line-height: 34px;
+	padding: 0px 0px 0px 0px;
+}
+
+#termUl li.mobile span.termIcon {
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	vertical-align: bottom;
+	background-image: url(../images/assetmanager_sprites.png);
+	background-repeat: no-repeat;
+	background-position: 0px -400px;
+	margin: 0px 5px;
+}
+
+#glossaryBrowserContainer .windowContainer div.searchContainer,
+#glossaryBrowserContainer .viewContainer div.searchContainer {
+	float: right;
+}
+

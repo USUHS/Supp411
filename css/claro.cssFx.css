@@ -1,0 +1,442 @@
+
+/*
+ * BASE CSSFX CLASS
+ */
+.cssFX{}
+.cssFX div.cssFX-level1{}
+.cssFX div.cssFX-level1 div.cssFX-level2{}
+.cssFX div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{}
+.cssFX div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper {
+	position:absolute;
+	width:100%;
+	height:100%;
+}
+.cssFX div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper img,
+.cssFX div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper div.content,
+.cssFX div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper svg{
+	position:absolute;
+	z-index:1;
+	width:100%;
+	height:100%;
+}
+
+/*
+ * Claro.ui.cssFx.styles.THIN()
+ */			
+.cssFX-Thin div.cssFX-level1{
+	border			: 1px solid #a9a9a9 !important;
+	border-top 		: 1px solid #f5f5f5 !important;
+	box-shadow		: 0px 4px 4px -1px #acacac;
+	background-color: #ffffff;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	right : 0px;
+	bottom : 0px;
+}
+.cssFX-Thin div.cssFX-level1 div.cssFX-level2{
+	border	: none;
+	position : absolute;
+	left : 8px;
+	bottom : 8px;
+	right : 8px;
+	top : 8px;
+}
+.cssFX-Thin div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	position : absolute;
+	height:100%;
+	width:100%;
+}
+
+
+/*
+ * Claro.ui.cssFx.styles.THICK()
+ */			
+.cssFX-Thick div.cssFX-level1{
+	border			: 1px solid #a9a9a9 !important;
+	border-top 		: 1px solid #f5f5f5 !important;
+	box-shadow		: 0px 4px 4px -1px #acacac;
+	background-color: #ffffff;
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	right : 0px;
+	bottom : 0px
+}
+.cssFX-Thick div.cssFX-level1 div.cssFX-level2{
+	border :none;
+	position : absolute;
+	left : 15px;
+	bottom : 15px;
+	right : 15px;
+	top : 15px;
+}
+.cssFX-Thick div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	position : absolute;
+	height:100%;
+	width:100%;
+}
+
+/*
+ * Claro.ui.cssFx.style.POLAROID()
+ */
+.cssFX-Polaroid div.cssFX-level1{
+	border-top 		: 1px solid #D1CEC7  !important;
+	border-right 	: 1px solid #5B5C56  !important;
+	border-bottom	: 1px solid #87847F  !important;
+	border-left		: 1px solid #A2A39B  !important;
+	box-shadow		: 0px 0px 16px 3px #87847F;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+}
+
+.cssFX-Polaroid div.cssFX-level1 div.cssFX-level2{
+	border-style : solid;
+	border-color : #f1f1f1;
+	border-width : 10px;	
+	border-bottom-width: 50px;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;	
+}
+
+.cssFX-Polaroid div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	position : absolute;
+	height:100%;
+	width:100%;
+}
+
+/*
+ * Claro.ui.cssFx.style.BEVEL()
+ */
+.cssFX-Bevel div.cssFX-level1{
+	border-top 		: 4px solid #D1CEC7  !important;
+	border-right 	: 4px solid #5B5C56  !important;
+	border-bottom	: 4px solid #87847F  !important;
+	border-left		: 4px solid #A2A39B  !important;
+	box-shadow		: 0px 0px 16px 3px #87847F;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+}
+
+.cssFX-Bevel div.cssFX-level1 div.cssFX-level2{
+	background-color: #dbd9cd;
+	border 			: 2px solid #dbd9cd;
+	border-top-color: #fcf9f2;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;	
+}
+
+.cssFX-Bevel div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	border : none;
+	position : absolute;
+	left : 14px;
+	bottom : 14px;
+	right : 14px;
+	top : 14px;	
+}
+
+/*
+ * Claro.ui.cssFx.style.SHADOW()
+ */
+.cssFX-Shadow div.cssFX-level1{
+	border			: none;
+	box-shadow		: 10px 10px 20px 0px #333;
+	 -webkit-box-shadow : 10px 10px 20px 0px #333;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Shadow div.cssFX-level1 div.cssFX-level2{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Shadow div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Shadow div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div img{
+	
+}
+
+/*
+ * Claro.ui.cssFx.style.ROUNDED()
+ */
+.cssFX-Rounded div.cssFX-level1{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+	behavior : url(../css/PIE.htc)	
+}
+
+.cssFX-Rounded div.cssFX-level1 div.cssFX-level2{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Rounded div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Rounded div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div img{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Circle div.cssFX-level1{
+	-moz-border-radius 	 	: 50%;	
+	-webkit-border-radius	: 50%;
+	border-radius			: 50%;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+	behavior : url(../css/PIE.htc)	
+}
+
+.cssFX-Circle div.cssFX-level1 div.cssFX-level2{
+	-moz-border-radius 	 	: 50%;	
+	-webkit-border-radius	: 50%;
+	border-radius			: 50%;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Circle div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	-moz-border-radius 	 	: 50%;	
+	-webkit-border-radius	: 50%;
+	border-radius			: 50%;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-Circle div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div img{
+	-moz-border-radius 	 	: 50%;	
+	-webkit-border-radius	: 50%;
+	border-radius			: 50%;
+	overflow : hidden;
+	behavior : url(../css/PIE.htc)
+}
+
+
+/*
+ * Claro.ui.cssFx.style.Reflect()
+ */
+.cssFX-Reflect div.cssFX-level1{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+}
+
+.cssFX-Reflect div.cssFX-level1 div.cssFX-level2{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+}
+
+.cssFX-Reflect div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+}
+
+.cssFX-Reflect div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper img.reflected{
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	right : 0px;
+	height : 70% !important;
+	filter : inherit;
+}
+
+.cssFX-Reflect div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper canvas,
+.cssFX-Reflect div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper img{
+	position : absolute;
+	bottom : 0px;
+	margin : 0px !important;
+	height : 30% !important;
+	width : 100% !important;
+	filter : inherit;
+	
+}
+
+/*
+ * Claro.ui.cssFx.style.ROUNDEDSHADOW()
+ */
+.cssFX-RoundedShadow div.cssFX-level1{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	box-shadow		: 14px 14px 20px 0px #acacac;	
+	-webkit-box-shadow : 14px 14px 20px 0px #acacac;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+	behavior : url(../css/PIE.htc)	
+}
+
+.cssFX-RoundedShadow div.cssFX-level1 div.cssFX-level2{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-RoundedShadow div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+	behavior : url(../css/PIE.htc)
+}
+
+.cssFX-RoundedShadow div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div img{
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;
+	overflow : hidden;
+	behavior : url(../css/PIE.htc)
+}
+
+/*
+ * Claro.ui.cssFx.style.RoundedMirror()
+ */
+.cssFX-MirrorRounded div.cssFX-level1{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;		
+}
+
+.cssFX-MirrorRounded div.cssFX-level1 div.cssFX-level2{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+}
+
+.cssFX-MirrorRounded div.cssFX-level1 div.cssFX-level2 div.cssFX-level3{
+	position : absolute;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+	top : 0px;
+}
+
+.cssFX-MirrorRounded div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper img.reflected{
+	position : absolute;
+	left : 0px;
+	top : 0px;
+	right : 0px;
+	height : 70% !important;
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;	
+	filter : inherit;
+	opacity:inherit
+	
+}
+
+.cssFX-MirrorRounded div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper div canvas,
+.cssFX-MirrorRounded div.cssFX-level1 div.cssFX-level2 div.cssFX-level3 div.dki-authoring-content-wrapper div img{
+	position : absolute;
+	bottom : 0px;
+	margin : 0px !important;
+	height : 30% !important;
+	width : 100% !important;
+	-moz-border-radius 	 	: 12px;	
+	-webkit-border-radius	: 12px;
+	border-radius			: 12px;	
+	filter : inherit;
+	opacity:inherit
+	
+}
+
+
+/*letterFX*/
+.letterfx{display:inline-block;margin:0;padding:0;transition:all 1s;-ms-transition:all 1s;-webkit-transition:all 1s}.letterfx-spin-before{transform:rotate(3600deg);-ms-transform:rotate(3600deg);-webkit-transform:rotate(3600deg)}.letterfx-spin-after{transform:none}.letterfx-fade-before{opacity:0}.letterfx-grow-before{transform:scale(0,0);-ms-transform:scale(0,0);-webkit-transform:scale(0,0)}.letterfx-grow-after{transform:none}.letterfx-smear-before{color:transparent;text-shadow:-1px -1px 25px transparent}.letterfx-smear-after{color:inherit;text-shadow:0 0 #333}.letterfx-fall-before{visibility:hidden;transform:scale(3,3);-ms-transform:scale(3,3);-webkit-transform:scale(3,3)}.letterfx-fall-after{transform:scale(1,1);-ms-transform:scale(1,1);-webkit-transform:scale(1,1);text-shadow:0}.letterfx-swirl-before{visibility:hidden;transform:scale(3,3) rotate(3600deg);-ms-transform:scale(3,3) rotate(3600deg);-webkit-transform:scale(3,3) rotate(3600deg)}.letterfx-swirl-after{transform:none text-shadow:0}.letterfx-wave-container .letterfx{position:relative}.letterfx-wave-before{bottom:0}.letterfx-wave-after{bottom:15px}.letterfx-fly-left-container .letterfx,.letterfx-fly-right-container .letterfx,.letterfx-fly-top-container .letterfx,.letterfx-fly-bottom-container .letterfx{position:relative}.letterfx-fly-left-before{left:-50em}.letterfx-fly-left-after{left:0}.letterfx-fly-right-before{right:-50em}.letterfx-fly-right-after{right:0}.letterfx-fly-top-before{top:-20em}.letterfx-fly-top-after{top:0}.letterfx-fly-bottom-before{bottom:-20em}.letterfx-fly-bottom-after{bottom:0}

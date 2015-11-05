@@ -1,0 +1,28 @@
+.dki-PlayerTree .treeNode a span {	
+	height				: 40px;
+	line-height			: 40px;
+}
+
+.dki-PlayerTree .course a {
+	background-position : 0px -60px;
+}
+
+.dki-PlayerTree .module a {
+	background-position : 0px -60px;	
+}
+
+.dki-PlayerTree .object a {
+	background-position : 0px -60px;
+}
+
+.dki-PlayerTree .course a.collapse{
+	background-position : 0px -116px;
+}
+
+.dki-PlayerTree .module a.collapse {
+	background-position : 0px -116px;
+}
+
+.dki-PlayerTree .object a.collapse {
+	background-position : 0px -116px;
+}

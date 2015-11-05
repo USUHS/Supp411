@@ -1,0 +1,92 @@
+#browserWarning_disabler {
+	position:absolute;
+	height:100%;
+	width:100%;
+	z-index:100000;
+	background-color:#000000;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+}
+
+#browserWarning_notice {
+	background: transparent;
+	width: 100%;
+	max-width:720px;
+	position:absolute;
+	z-index:100001;
+	color: #000;
+}
+
+#browserWarning_content {
+	font-size:18px;
+	background-color: #FFFFFF;
+	border: 1px solid black;	
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	max-width:700px;
+	text-align:center;
+}
+
+#browserWarning_content h2 {
+	font-size:40px;
+}
+
+#browserWarning_close {
+	display:block;
+	height:25px;
+	width: 25px;
+	background-image: url(../images/panel_closeButton.png);
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#browserWarning_close span,
+#browserWarning_downloads a span {
+	visibility:hidden;
+}
+
+#browserWarning_downloads {
+	margin:10px auto;
+	padding-top:20px;
+}
+
+#browserWarning_chromeDownload {
+	background-position:0px 0px;
+}
+
+#browserWarning_firefoxDownload {
+	background-position:-141px 0px;
+}
+
+#browserWarning_safariDownload {
+	background-position:-423px 0px;
+}
+
+#browserWarning_ieDownload {
+	background-position:-564px 0px;
+}
+
+#browserWarning_downloads a {
+	height:132px;
+	width:141px;
+	display:inline-block;
+	background-image: url(../images/browser_logos-128.png);
+	background-repeat: no-repeat;
+	vertical-align:bottom;
+}
+
+#browserWarning_downloads #browserWarning_ieDownload {
+	display:none;
+}
+
+#browserWarning_downloads.windows #browserWarning_safariDownload {
+	display:none;
+}
+
+#browserWarning_downloads.windows #browserWarning_ieDownload {
+	display:inline-block;
+}

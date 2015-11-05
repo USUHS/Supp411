@@ -1,0 +1,42 @@
+#listButton {
+	display:none;
+}
+
+#moreButtons {
+	
+	position:relative;
+	z-index:2;
+}
+
+
+
+#menu {
+	border-radius-topright: 10px;
+	border-radius-bottomright: 10px;
+	-webkit-border-top-right-radius:10px;
+	-webkit-border-bottom-right-radius:10px;
+	-moz-border-radius-topright:10px;
+	-moz-border-radius-bottomright:10px;
+	left:0px;
+}
+
+html.ltr #moreButtons{
+	float:left;
+	margin-left:5px;
+}
+html.rtl #moreButtons{
+	float: right;
+	margin-right: 5px;
+}
+
+html.ltr #moreButtons .navButton {
+	float:left;
+}
+
+html.rtl #moreButtons .navButton {
+	float: right;
+}
+
+html.rtl #navigationButtons{
+	float: left !important;
+}

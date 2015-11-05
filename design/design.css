@@ -1,0 +1,204 @@
+body, html {
+  font-family: "Arial", "Helvetica", sans-serif;
+}
+.title-text {
+  font-size: 40px;
+  color: #505050;
+  
+}
+.subtitle-text {
+  font-size: 29px;
+  color: #004363;
+}
+.header-text {
+  font-size: 24px;
+  color: #004363;
+}
+.content {
+  font-size: 18px;
+  color: #505050;
+}
+.content ul li,
+.content ol li {
+  font-size: inherit;
+  color: inherit;
+}
+.footer-text {
+  font-size: 18px;
+  color: #505050;
+}
+.dki-body-background,
+.contentFrame {
+  background-image: url("resources/background.png");
+  background-repeat: no-repeat;
+}
+#PageBackgroundDiv{
+	background-image: url("resources/bg_repeater.png");
+	background-repeat: repeat-y;
+}
+.dki-table-element thead tr,
+.dki-table-element thead td {
+  background-color: #4991a9;
+  color: #fff;
+}
+.dki-table-element table,
+.dki-table-element tr,
+.dki-table-element td {
+  background-color: #afafaf;
+  border-color: #000;
+  color: #505050;
+}
+.questionOpening,
+.questionBody,
+.dki-trueFalseOption-element .content,
+.dki-fillBlanksOption-element .content,
+.dki-multiChoiceOption-element .content,
+.dki-multiPulldownOption-element .content {
+}
+.submitButton {
+  height: 32px;
+  right: 35px;
+  bottom: 15px;
+  text-decoration: none;
+  color: #6b6b6b;
+  font-size: 14px;
+}
+a.submitButton span.buttonPartial.left,
+a.submitButton span.buttonPartial.right{
+  display:inline-block;
+  width: 12px;   
+}
+a.submitButton span.buttonPartial {
+  background-position: 0px -5px;
+  height: 32px;
+  float:left;
+  line-height: 32px;
+  text-align: center;
+}
+a.submitButton:hover span.buttonPartial {
+  background-position: 0px -55px;
+}
+a.submitButton:active span.buttonPartial {
+  background-position: 0px -107px;
+}
+
+a.submitButton span.buttonPartial.left {
+  background-image: url("resources/testing/submitLeft.png");
+}
+a.submitButton span.buttonPartial.right {
+  background-image: url("resources/testing/submitRight.png");
+}
+a.submitButton span.buttonPartial.middle {
+  background-image: url("resources/testing/submitCenter.png");
+  background-repeat: repeat-x;
+  padding: 0px 5px;
+}
+
+.feedbackWrapper {
+  background-color: #eee;
+  color: #000;
+  min-height: 120px;
+  width: 350px;
+  top: 50%;
+  left: 50%;
+  padding-bottom: 10px;
+  margin-left: -175px;
+  margin-top: -60px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.feedbackHeader {
+  color: #fff;
+  height: 19px;
+  width: 100%;
+  line-height: 19px;
+  background-position: 0 -5px;
+  background-repeat: repeat-x;
+  background-color: transparent;
+  border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -moz-border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+}
+.feedbackClose {
+  background-image: url("resources/testing/panel_closeButton.png");
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: -7px;
+  right: -6px;
+}
+.questionFeedback {
+  padding: 0px 10px 10px 10px;
+}
+
+.multiChoiceCorrectResponse {
+  border: none;
+}
+
+.dki-trueFalseOption-element .content input,
+.dki-multiChoiceOption-element .content input {
+	display:none;
+}
+
+.dki-trueFalseOption-element .content label,
+.dki-multiChoiceOption-element .content label {
+	background-position:0px 0px;
+	background-repeat: no-repeat;
+	padding-left:25px;
+	display:inline-block;
+	height:100%;
+}
+
+.dki-multiChoiceOption-element .content label {
+  background-image: url("resources/testing/checkbox_normal.png");
+}
+
+.dki-multiChoiceOption-element .content label.checked {
+  background-image: url("resources/testing/checkbox_clicked.png");
+}
+
+.dki-trueFalseOption-element .content  label {
+  background-image: url("resources/testing/radioButton_normal.png");
+}
+
+.dki-trueFalseOption-element .content label.checked {
+  background-image: url("resources/testing/radioButton_clicked.png");
+}
+
+.dki-trueFalseOption-element .content:hover,
+.dki-multiChoiceOption-element .content:hover {
+  background-color: #d1deeb;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+.dki-multiChoiceOption-element .multiChoiceCorrectResponse label {
+  background-image: url("resources/testing/checkbox_normal_correct.png");
+}
+
+.dki-multiChoiceOption-element .multiChoiceCorrectResponse label.checked {
+  background-image: url("resources/testing/checkbox_clicked_correct.png");
+}
+
+.dki-trueFalseOption-element .multiChoiceCorrectResponse label {
+  background-image: url("resources/testing/radioButton_normal_correct.png");
+}
+
+.dki-trueFalseOption-element .multiChoiceCorrectResponse label.checked {
+  background-image: url("resources/testing/radioButton_clicked_correct.png");
+}
+
+.questionScoreDisplay {
+  position: absolute;
+  bottom: 0px;
+  right: 50px;
+}

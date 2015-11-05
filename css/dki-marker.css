@@ -1,0 +1,134 @@
+.dki-marker-element{
+	
+}
+
+.dki-marker-element .dki-element-content{
+	color: white;
+	text-align: center;
+	cursor: pointer;	
+	background-color: #333;
+	box-sizing: border-box;
+	line-height: 100%;
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+
+.dki-marker-element .dki-element-content.round{
+	border-radius: 50%;
+}
+
+.dki-marker-element .dki-element-content:before{
+	font-size: 0.6em;
+	vertical-align: top;
+}
+
+/*double characters need to be smaller...*/
+.dki-marker-element .dki-element-content.fa-10:before,
+.dki-marker-element .dki-element-content.fa-11:before,
+.dki-marker-element .dki-element-content.fa-12:before,
+.dki-marker-element .dki-element-content.fa-13:before,
+.dki-marker-element .dki-element-content.fa-14:before,
+.dki-marker-element .dki-element-content.fa-15:before,
+.dki-marker-element .dki-element-content.fa-16:before,
+.dki-marker-element .dki-element-content.fa-17:before,
+.dki-marker-element .dki-element-content.fa-18:before,
+.dki-marker-element .dki-element-content.fa-19:before,
+.dki-marker-element .dki-element-content.fa-20:before{
+	font-size: 0.4em;
+}
+
+.fa-0:before {
+  content: "0";
+}
+.fa-1:before {
+  content: "1";
+}
+.fa-2:before {
+  content: "2";
+}
+.fa-3:before {
+  content: "3";
+}
+.fa-4:before {
+  content: "4";
+}
+.fa-5:before {
+  content: "5";
+}
+.fa-6:before {
+  content: "6";
+}
+.fa-7:before {
+  content: "7";
+}
+.fa-8:before {
+  content: "8";
+}
+.fa-9:before {
+  content: "9";
+}
+
+.fa-0:before {
+  content: "0";
+}
+.fa-1:before {
+  content: "1";
+}
+.fa-2:before {
+  content: "2";
+}
+.fa-3:before {
+  content: "3";
+}
+.fa-4:before {
+  content: "4";
+}
+.fa-5:before {
+  content: "5";
+}
+.fa-6:before {
+  content: "6";
+}
+.fa-7:before {
+  content: "7";
+}
+.fa-8:before {
+  content: "8";
+}
+.fa-9:before {
+  content: "9";
+}
+.fa-10:before {
+  content: "10";
+}
+.fa-11:before {
+  content: "11";
+}
+.fa-12:before {
+  content: "12";
+}
+.fa-13:before {
+  content: "13";
+}
+.fa-14:before {
+  content: "14";
+}
+.fa-15:before {
+  content: "15";
+}
+.fa-16:before {
+  content: "16";
+}
+.fa-17:before {
+  content: "17";
+}
+.fa-18:before {
+  content: "18";
+}
+.fa-19:before {
+  content: "19";
+}
+.fa-20:before {
+  content: "20";
+}

@@ -1,0 +1,1094 @@
+
+/* This file contains the base styling for content of a course. Included in authoring */
+/* Base Line Styles*/
+
+/* Reset */
+
+html {
+	color: #444444;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-repeat: repeat;
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+}
+
+body {
+	height: auto;
+	padding: 0;
+	line-height: 1;
+	margin: auto;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form,
+fieldset, legend, input, button, textarea, p, blockquote, span {
+	margin: 0;
+	padding: 0;
+	line-height: 1;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+li {
+	list-style: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.dki-table-element td[style] {
+	border-style: double;
+}
+
+fieldset, img {
+	border: 0;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var, optgroup {}
+del, ins { text-decoration: none; }
+caption, th {}
+h1, h2, h3, h4, h5, h6 {}
+q:before, q:after { content: ''; }
+abbr, acronym { border: 0; font-variant: normal; }
+sup {}
+sub {}
+legend { color: #333333; }
+input, button, textarea, select, optgroup, option {}
+input, button, textarea, select {}
+div fieldset legend {
+	font-size:12px;
+	margin-bottom:5px;
+}
+
+/* Lists */
+ol {
+	list-style-type: decimal;
+	list-style-position: outside;
+	margin-left: 15px;
+}
+
+ul {
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 15px;
+}
+
+ol li, ul li {
+	list-style-type: inherit;
+	list-style-position: outside;
+	margin-left: 15px;
+}
+
+body.noscroll {
+	overflow: hidden;
+}
+
+audio.dki-media-control {
+	background-color:#333;
+	background-image:url(../images/control_play.png);
+	background-repeat:no-repeat;
+	background-position:5px center;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	display:block;
+	height:20px;
+	opacity:0.7;
+	filter: alpha(opacity = 70);
+}
+
+audio.dki-media-control.playing {
+	background-image:url(../images/control_pause.png);
+}
+
+/* Content wrappers */
+.pageElementsWrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.pageContentWrapper{
+
+}
+
+.zoomedWrapper{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/* Text Elements */
+.dki-text-style-bold{
+	font-weight: bold;
+}
+
+.dki-text-style-italic{
+	font-style: italic;
+}
+
+.dki-text-style-underline{
+	text-decoration: underline;
+}
+
+.dki-text-style-strike{
+	text-decoration: line-through;
+}
+
+.dki-table-element table thead{
+	display: table-header-group;
+	vertical-align: middle;
+}
+
+.dki-table-element table,.dki-table-element tr,.dki-table-element td{
+	border-color: #333;
+}
+
+.dki-table-element thead tr,.dki-table-element thead th{
+	background-color: #ccc;
+}
+
+.dki-glossary-link{
+	text-decoration: underline;
+	cursor: pointer;
+	color:inherit;
+}
+
+.dki-citation-link sup.refSup{
+	cursor: pointer;
+}
+
+.dki-htm-element .dki-element-content{
+	min-height: 1em;
+}
+
+.dki-htm-element sup, .dki-table-element sup{
+	font-size : 0.6em;	
+	position: relative;
+	top: -0.3em;
+	vertical-align: top;
+}
+
+.dki-htm-element sub, .dki-table-element sub{
+	font-size : 0.6em;
+	position: relative;
+	top: 0.3em;
+	vertical-align: bottom;
+}
+
+.dki-htm-element *, .dki-table-element *{
+	line-height: inherit;
+}
+
+.dki-justify-left{
+	text-align: left !important;
+}
+.dki-justify-right{
+	text-align: right !important;
+}
+.dki-justify-center{
+	text-align: center !important;
+}
+.dki-justify-block{
+	text-align: justify !important;
+}
+
+.dki-font-family-arial{
+	font-family: Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif !important;
+}
+.dki-font-family-arial-narrow{
+	font-family: 'Arial Narrow', 'Arial', 'Nimbus Sans L', sans-serif !important;
+	font-stretch: condensed;
+}
+.dki-font-family-arial-black{
+	font-family: 'Arial Black',Gadget,sans-serif !important;
+	font-weight: 900;
+}
+.dki-font-family-bookman{
+	font-family: Bookman,'Bookman Old Style','URW Bookman L','Palatino Linotype',serif !important;
+}
+.dki-font-family-bookman-old-style{
+	font-family: 'Bookman Old Style',Bookman,'URW Bookman L','Palatino Linotype',serif !important;
+}
+
+.dki-font-family-century-gothic{
+	font-family: 'Century Gothic',futura,'URW Gothic L',Verdana,sans-serif !important;
+}
+.dki-font-family-console{
+	font-family: Consolas,'Lucida Console','DejaVu Sans Mono',monospace !important;
+}
+.dki-font-family-comic-sans-ms{
+	font-family: 'Comic Sans MS', cursive !important;
+}
+.dki-font-family-courier{
+	font-family: Courier,'Courier New','Nimbus Mono L',monospace !important;
+}
+.dki-font-family-courier-new{
+	font-family: 'Courier New',Courier,'Nimbus Mono L',monospace !important;
+}
+
+.dki-font-family-georgia{
+	font-family: Georgia,Constantia,'Nimbus Roman No9 L',serif !important;
+}
+.dki-font-family-helvetica{
+	font-family: Helvetica,Arial,'DejaVu Sans','Liberation Sans',Freesans,sans-serif !important;
+}
+.dki-font-family-impact{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif !important;
+}
+.dki-font-family-lucida-console{
+	font-family: 'Lucida Console',Consolas,'DejaVu Sans Mono',monospace !important;
+}
+.dki-font-family-lucida-sans-unicode{
+	font-family: 'Lucida Sans Unicode','Lucida Grande','Lucida Sans','DejaVu Sans Condensed',sans-serif !important;
+}
+
+.dki-font-family-palatino-linotype{
+	font-family: 'Palatino Linotype',Cambria,'Book Antiqua','URW Palladio L',serif !important;
+}								
+.dki-font-family-tahoma{
+	font-family: 'Tahoma',sans-serif !important;
+}
+.dki-font-family-times-new-roman{
+	font-family: 'Times New Roman',Cambria,'Nimbus Roman No9 L','Freeserif',Times,serif !important;
+}
+.dki-font-family-trebuchet-ms{
+	font-family: 'Trebuchet MS',sans-serif !important;
+}
+.dki-font-family-verdana{
+	font-family: Verdana,Geneva,'DejaVu Sans',sans-serif !important;
+}
+
+.dki-indent-1{
+	margin-left: 40px;
+}
+.dki-indent-2{
+	margin-left: 80px;
+}
+.dki-indent-3{
+	margin-left: 120px;
+}
+.dki-indent-4{
+	margin-left: 160px;
+}
+.dki-indent-5{
+	margin-left: 200px;
+}
+
+
+/* All Elements */
+.dki-authoring-group{
+	position: absolute;
+	box-sizing: border-box;
+	width:1px; /*can't reliably detect if the group is visible without giving it a height or width*/
+	left: 0; /*for rtl languages, to ensure everything places properly*/
+}
+
+html.document-mode .dki-authoring-group{
+	width: auto;
+	height: auto;
+	left: auto;
+}
+
+.dki-authoring-group.hiddenOnLoad{
+	display: none;
+}
+
+.dki-authoring-element{
+	position:absolute;
+}
+iframe.dki-element-content{
+	box-sizing: border-box;
+}
+.dki-element-anchor{
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+}
+*:focus {
+	outline: 0;
+}
+/* testing taborder stuff.
+ *:focus {
+ 	outline: 1px auto #c6defd !important;
+ }
+ 
+ *:focus {
+	background-color: #F1CA7F;
+	z-index: 5;
+	opacity: 0.5;
+}
+
+*:focus:before{
+	content: "focus is here";
+	background-color: yellow;
+	position: absolute;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+}
+*/
+
+#contentFrame .dkiContentFrame.hidden *[tabindex], 
+#contentFrame .dkiContentFrame.hidden a, 
+#contentFrame .pageElementsWrapper.design a,
+#contentFrame .pageElementsWrapper.design *[tabindex],
+#contentFrame .dkiContentFrame.hidden video, 
+#contentFrame .dkiContentFrame.hidden audio, 
+#contentFrame .dkiContentFrame.hidden iframe{
+	visibility: hidden;
+}
+
+#contentFrame .dkiContentFrame.current *[tabindex], 
+#contentFrame .dkiContentFrame.current a{
+	visibility: inherit;
+}
+
+.dki-authoring-element-label {
+	position: absolute;
+}
+
+.dki-authoring-element-label.round .dki-authoring-element-label-background,
+.dki-authoring-element-label.round .dki-authoring-element-label-text {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.dki-authoring-element-label.round .dki-authoring-element-label-text {
+}
+
+.dki-authoring-element.dki-element-highlighted{
+	outline: 2px dashed red;
+	display: block !important;
+}
+.dki-htm-element .dki-text-highlight, .dki-table-element .dki-text-highlight{
+	background-color: yellow;
+}
+
+.dki-hotspot-element{
+	background-image: url(../images/transparent.gif);
+	background-repeat: repeat;
+}
+.dki-shape-element{
+	background-image: url(../images/transparent.gif);
+	background-repeat: repeat;
+}
+/* Image Maps */
+.dki-authoring-element area{
+	cursor: pointer;
+}
+
+.dki-authoring-content-wrapper{
+	box-sizing: border-box;
+}
+
+.dki-instructionalText-element{
+	box-sizing: border-box;
+	background-color: #000;	
+	opacity: 0.9;
+	border-radius: 4px;
+	color: white;
+	padding: 5px;
+	padding-top: 10px;
+	text-align: center !important;
+}
+.scene-mouse-pointer{
+	width: 32px;
+	height: 32px;
+	background-image: url(../images/mousePointer.png);
+	position: absolute;
+	top: -50px;
+	left: -50px;
+	display: none;
+	z-index: 10000;
+}
+.dki-hotspot-element{
+	cursor: pointer;
+}
+
+/* For PPT Import */
+.dki-missing-media-placeholder:before {
+	display: block;
+	position: relative;
+	top: 40%;
+	text-align: center;
+	color: #FFF;
+}
+
+.dki-missing-media-placeholder {
+	background-color: #222;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+}
+
+.dki-VideoPlaceholder-element .dki-missing-media-placeholder:before {
+	content: "Video Placeholder. Double click to upload file.";
+}
+
+.dki-AudioPlaceholder-element .dki-missing-media-placeholder:before {
+	content: "Audio Placeholder. Double click to upload file.";
+}
+
+.dki-VideoembedPlaceHolder-element .dki-missing-media-placeholder:before {
+	content: "Embedded Video Placeholder. Double click to upload file.";
+}
+
+.dki-FlashPlaceholder-element .dki-missing-media-placeholder:before {
+	content: "Flash Placeholder. Double click to upload file.";
+}
+/* End for PPT Import */
+
+.dki-media-placeholder:before {
+	display: block;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	padding: 2px 0px;
+	text-align: center;
+	color: #FFF;
+	background-color: #000;
+	opacity: 0.9;
+	filter: alpha(opacity = 90);
+}
+
+.dki-media-placeholder {
+	background-image: url(../images/control_play.png);
+	background-repeat: no-repeat;
+	background-position: 5px center;
+	background-color: #222;
+	opacity: 0.7;
+	filter: alpha(opacity = 70);
+}
+
+.dki-media-placeholder.hasPoster {
+	opacity: 1.0;
+	filter: alpha(opacity = 100);
+}
+
+.dki-videoembed-element .dki-media-placeholder:before {
+	content: "Embedded Video";
+}
+
+.dki-video-element .dki-media-placeholder:before {
+	content: "Video Asset";
+}
+
+.dki-audio-element .dki-media-placeholder:before {
+	content: "Audio Asset";
+}
+
+.dki-flash-element .dki-media-placeholder:before {
+	content: "Flash Asset";
+}
+
+.dki-iframe-element .dki-media-placeholder:before {
+	content: "External Webpage";
+}
+
+.dki-html-element .dki-media-placeholder:before {
+	content: "HTML Widget";
+}
+
+.dki-html-element.bordered .dki-authoring-content-wrapper{
+	border: 1px solid black;
+	box-sizing: border-box;
+}
+
+.dki-element-overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	background-image: url(../images/transparent.gif);
+	background-repeat: repeat;
+}
+
+/* Test Questions */
+.submitButton, .questionScoreDisplay {
+	display: none;
+	position: fixed;
+	right:10px;
+	bottom:0px;
+	z-index:1;
+}
+
+.submitButton {
+	cursor: pointer;
+}
+
+.questionScoreDisplay{
+	height: 30px;
+	overflow: visible;
+}
+
+.feedbackWrapper {
+	-webkit-transition-property: opacity, -webkit-transform;
+	-moz-transition-property: opacity, -moz-transform;
+	-o-transition-property: opacity, -o-transform;
+	-ms-transition-property: opacity, -ms-transform; 
+	transition-property: opacity, transform;
+	-webkit-transition-duration: 0.25s, 0.5s;
+	-moz-transition-duration: 0.25s, 0.5s;
+	-o-transition-duration: 0.25s, 0.5s;
+	-ms-transition-duration: 0.25s, 0.5s;
+	transition-duration: 0.25s, 0.5s;
+	position:absolute;	
+	z-index:1;	
+	max-height: 580px;
+	min-height: 120px;
+	width: 420px;
+	left: 50%;
+	margin-left: -210px;
+}
+
+body.phone .feedbackWrapper{
+	width: 280px;
+	max-height: 380px;
+	margin-left: -140px;
+}
+
+.questionFeedback{
+	max-height: 520px;
+	max-width: 950px;
+	min-height: 80px;
+}
+
+
+
+.feedbackWrapper.dragging {
+	-webkit-transition: none;
+	-moz-transition: none;
+	-ms-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+.feedbackWrapper.hidden {
+	
+	z-index: 0;
+	display: none;
+}
+
+.feedbackClose{
+	background-repeat: no-repeat;
+}
+
+.panel_header, .panel_header table {
+	width:100%;
+}
+
+.panel_mid, .panel_mid table {
+	width:100%;
+}
+
+.panel_footer, .panel_footer table {
+	width:100%;
+}
+
+.questionFeedback {
+	display:none;
+}
+
+/* Elements can have padding and margin set to them by the toolbox. We need to override them for this functionality to work */
+.correct {
+	padding-left: 21px !important;
+	margin-left: -21px !important;
+	background-image: url(../images/correct.png);
+	background-repeat: no-repeat;
+}
+
+.incorrect {
+	padding-left: 21px !important;
+	margin-left: -21px !important;
+	background-image: url(../images/incorrect.png);
+	background-repeat: no-repeat;
+}
+
+.multiChoiceCorrectResponse {	
+	padding-left: 21px;
+	border: 2px solid green;
+	margin-left: -21px;
+	box-sizing: border-box;
+}
+
+.optionNumber{
+	display: inline-block;
+	width: 20px;
+}
+
+.dki-multiChoiceOption-element input, .dki-trueFalseOption-element input{
+	margin-right: 5px;
+	vertical-align: middle;
+}
+
+.dki-multiChoice-selector,
+.dki-trueFalse-selector {
+	height:100%;
+	width:100%; 
+	position: absolute; 
+	z-index: 1;
+	cursor: pointer;
+	background-image: url('../images/transparent.gif');
+
+}
+
+
+.dki-multiChoiceOption-element, .dki-trueFalseOption-element{
+	background-image: url(../images/transparent.gif);
+}
+
+.dki-freeFormOption-element textarea{
+	color: #000;
+	resize: none;
+}
+
+.dki-authoring-element[data-is-draggable=true]{
+	cursor: move;
+}
+
+.dki-multiPulldownOption-element .contentWrapper {
+	width: 100%;
+	box-sizing: border-box;
+	padding-left: 25px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.dki-authoring-row .dki-multiPulldownOption-element .contentWrapper {
+	padding-right: 15px;
+}
+
+.dki-multiPulldownOption-element select.content {
+	width: 100%;
+}
+
+#pageElementsWrapper{
+	visibility: hidden;
+}
+
+option.content, select.content, input.content {
+	color:#000;
+}
+
+.dki-textbox-element textarea{
+	resize: none;
+}
+
+.dki-question-option select, .dki-question-option textarea, .dki-question-option input[type="text"] {
+	font-family: inherit;
+}
+
+
+/* Image labels */
+.dki-authoring-element-label-wrapper{
+	z-index: 3;
+	position: absolute;
+}
+
+.dki-authoring-element-label-text {
+	overflow: hidden;
+	margin: 3pt;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	filter: inherit;
+}
+.dki-authoring-element-label-background {
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	filter: inherit;
+}
+
+/* Window Clases */
+.windowContainer,
+.viewContainer {
+	background-color: #F3F3F3;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	color: #6B6B6B;
+	border: 1px solid #BBB;
+	overflow:hidden;
+	position: absolute;
+	top: 43px;
+	z-index:5;	
+	box-shadow: 10px 10px 15px -5px #333;
+ 	-webkit-box-shadow: 10px 10px 15px -5px #333;
+ 	-moz-box-shadow: 10px 10px 15px -5px #333;
+ 	display: none;
+ 	height: 500px;
+ 	width:800px;
+}
+html.position-fixed .windowContainer,
+html.position-fixed .viewContainer {
+	position:fixed;
+}
+/* Case 48021 - If a course is no nav, our windows should have top 0, otherwise they need to show up under the top nav bar*/
+html.noNav .windowContainer,
+html.noNav .viewContainer {
+	top: 0px;
+}
+
+.windowContainer div.browserHeader,
+.viewContainer div.browserHeader {
+	border-top-left-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	background-image: url(../images/headerBar_slice.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+	height: 23px;
+	width: 100%;
+}
+.windowContainer span.headerTitle,
+.viewContainer span.headerTitle {
+	color: white;
+	margin-left: 10px;
+	line-height: 23px;
+	font-size: 17px;
+	float:left;
+}
+
+.windowContainer div.searchContainer div.searchIcon,
+.viewContainer div.searchContainer div.searchIcon {
+	float:left;
+	vertical-align:middle;
+	width: 20px;
+	height: 100%;
+	background-image: url(../images/searchButton.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	margin-right: 5px;
+}
+
+.windowContainer input.searchInput,
+.viewContainer input.searchInput {
+	font-size: 20px;
+	border: none;
+	background-color:inherit;
+	color: #333;
+	width: 100%;
+	height: 23px;
+}
+
+.windowContainer div.sectionBreak,
+.viewContainer div.sectionBreak {
+	border-top: 1px solid #AAA;
+	width: 510px !important;
+	clear:both;
+	margin: 0px;
+}
+
+.windowContainer div.panel,
+.viewContainer div.panel {
+	background-color: inherit;
+	float: left;
+	height: 97%;
+	line-height: 20px;
+	padding: 0px 10px;
+	overflow: auto;
+}
+.browserList {
+	overflow: auto;
+	left:10px;
+	width: 201px;
+	border-right: 1px solid #C1C1C1;
+
+}
+.browserList li.selected {
+	background-color:#D1DEF3;
+}
+
+.browserList li a:link {
+	color:#6B6B6B;
+	text-decoration: none;
+}
+
+.browserList li a:visited {
+	color:#D1DEF3;
+}
+.browserContentContainer {
+	width:100%;
+	height: auto;
+	position:absolute;
+	top:24px;
+	bottom:3px;
+}
+
+.windowContainer div.browserList ul,
+.windowContainer div.browserList li,
+.viewContainer div.browserList ul,
+.viewContainer div.browserList li{
+	list-style-type: none;
+	cursor: default;
+}
+.windowContainer div.browserList ul.subList,
+.viewContainer div.browserList ul.subList {
+	margin-top: 5px;
+	margin-left: 0px;
+	border-top: 1px solid #AAA;
+}
+.windowContainer div.browserList li span.icon,
+.viewContainer div.browserList li span.icon {
+	background-image: url(../images/assetmanager_sprites.png);
+	background-repeat: no-repeat;
+	width:16px;
+	height:16px;
+	display:inline-block;
+	vertical-align:bottom;
+	margin-right: 5px;
+}
+.windowContainer div.browserList li span.linkIcon,
+.viewContainer div.browserList li span.linkIcon {
+	width:16px;
+	height:16px;
+	display:block;
+	background-image: url(../images/elementLink.png);
+	background-repeat:no-repeat;
+	background-position: 1px 9px;
+}
+
+.windowContainer ul.resultList,
+.windowContainer ul.resultList li,
+.viewContainer ul.resultList,
+.viewContainer ul.resultList li{
+	margin-left: 0px;
+	font-weight: bold;
+}
+.windowContainer ul.resultList ul li,
+.viewContainer ul.resultList ul li {
+ padding: 2px 0px 2px 0px;
+ cursor:pointer;
+ margin: 5px 0px 5px 15px;
+ list-style-type : none;
+}
+.windowContainer li.subItem,
+.viewContainer li.subItem {
+	font-weight: normal;
+	cursor: pointer;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 165px;
+	line-height:18px;
+}
+
+.windowContainer div.panel.details,
+.viewContainer div.panel.details {
+	width: 550px;
+	visibility: hidden;
+
+}
+.windowContainer div.detailsContent div.assetProperties a,
+.viewContainer div.detailsContent div.assetProperties a {
+	color: #333;
+}
+
+.windowContainer div.detailsContent.border,
+.viewContainer div.detailsContent.border {
+	border: 1px solid #AAA;
+}
+
+.windowContainer div.assetProperties,
+.viewContainer div.assetProperties {
+	background-color:#CCC;
+	padding: 5px 5px 5px 5px;
+}
+
+.windowContainer div.largeIco,
+.viewContainer div.largeIco {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.windowContainer div.searchDetails,
+.viewContainer div.searchDetails {
+	padding: 10px;
+}
+.windowContainer div.searchContainer,
+.viewContainer div.searchContairen {
+	margin-bottom:10px;
+	height: 20px;
+	margin-right: 5px;
+	border:none;
+}
+
+.windowContainer div.backButton,
+.viewContainer div.backButton {
+	-webkit-border-radius: 3px;
+	background-image: url(../images/headerBar_slice.png);
+	background-repeat: repeat-x;
+	background-position: top left;
+	display:none;
+	color: white;
+	font-size: 16px;
+	padding: 4px 15px;
+	margin: 6px 9px 0px 5px;
+	float:right;
+	cursor:pointer;
+}
+
+.windowContainer div.largeIco.elements,
+.viewContainer div.largeIco.elements {
+	background-image: url(../images/search/elementsThumb.png);
+}
+.windowContainer div.largeIco.pages,
+.viewContainer div.largeIco.pages {
+	background-image: url(../images/search/pageThumb.png);
+}
+.windowContainer div.largeIco.objects,
+.viewContainer div.largeIco.objects {
+	background-image: url(../images/search/LOThumb.png);
+}
+.windowContainer div.largeIco.modules,
+.viewContainer div.largeIco.modules {
+	background-image: url(../images/search/moduleThumb.png);
+}
+.windowContainer div.largeIco.course,
+.viewContainer div.largeIco.course {
+	background-image: url(../images/search/courseThumb.png);
+}
+.windowContainer div.largeIco.glossaries,
+.viewContainer div.largeIco.glossaries {
+	background-image: url(../images/search/glossaryThumb.png);
+}
+.windowContainer div.largeIco.references,
+.windowContainer div.largeIco.citations,
+.viewContainer div.largeIco.references,
+.viewContainer div.largeIco.citations {
+	background-image: url(../images/search/referenceThumb.png);
+}
+.windowContainer div.largeIco.imageLabels,
+.viewContainer div.largeIco.imageLabels {
+	background-image: url(../images/search/imageLabelThumb.png);
+}
+
+
+.windowContainer ul.resultList li.link span.linkIcon,
+.viewContainer ul.resultList li.link span.linkIcon {
+	display: inline-block;
+}
+.windowContainer ul.resultList li span.icon.link,
+.viewContainer ul.resultList li span.icon.link {
+	background-position:0px 0px;
+}
+
+.windowContainer ul.resultList li span.icon.image,
+.viewContainer ul.resultList li span.icon.image {
+	background-position:0px -96px;
+}
+
+.windowContainer ul.resultList li span.icon.flash,
+.viewContainer ul.resultList li span.icon.flash {
+	background-position:0px -48px;
+}
+
+.windowContainer ul.resultList li span.icon.video,
+.viewContainer ul.resultList li span.icon.video {
+	background-position:0px -64px;
+}
+
+.windowContainer ul.resultList li span.icon.audio,
+.viewContainer ul.resultList li span.icon.audio {
+	background-position:0px -80px;
+}
+
+.windowContainer ul.resultList li span.icon.document,
+.viewContainer ul.resultList li span.icon.document {
+	background-position:0px -32px;
+}
+
+.windowContainer ul.resultList li span.icon.html,
+.viewContainer ul.resultList li span.icon.html {
+	background-position:0px -112px ;
+}
+
+
+/* Window Phone Styles */
+
+.phone div.windowContainer,
+.phone div.viewContainer {
+	height: 440px;
+	margin-left: 15px;
+}
+.phone div.detailsContent {
+	width: 100%;
+}
+
+.phone div.browserList {
+	border: none;
+}
+
+.phone div.windowContainer div.searchContainer,
+.phone div.viewContainer div.searchContainer {
+	padding: 6px 0px 0px 10px;	
+}
+
+
+
+/* Lightbox styles */
+.fancybox-title-inside-wrap{
+	font-size: 1.2em;
+	font-weight: bold;
+	border-bottom: 1px solid #333;
+	padding-top: 0px;
+	margin-bottom: 5px;
+}
+
+.popup-content{
+	padding: 5px;
+}
+
+.fancybox-lock .fancybox-overlay{
+	overflow-y: auto;
+}
+
+.fancybox-inner .dki-video-element{
+	overflow: hidden; /* prevent scroll bars from appearing while loading videos in a lightbox */
+}
+
+
+.fancybox-nav {
+    width: 60px;       
+}
+
+.fancybox-nav span {
+    visibility: visible;
+    opacity: 0.5;
+}
+
+.fancybox-nav:hover span {
+    opacity: 1;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}

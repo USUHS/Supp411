@@ -1,0 +1,542 @@
+body{
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-weight: normal;
+	font-size: 16px;
+	color: #6b6b6b;
+}
+
+#headerContainer {
+	height: 43px;
+	width: 100%;
+	background-color: #fff;
+	background-image: url("resources/topBar.png");
+}
+body.mobile #headerContainer *{
+	visibility: hidden;
+}
+#contentFrame {
+	background-color: #fff;  
+	background-image: url("resources/bg_repeater.png");
+	background-repeat: repeat-y;
+}
+.dkiContentFrame{	
+	background-repeat: no-repeat
+}
+#footerContainer {
+	height: 60px;
+	width: 100%;
+	background-image: url("resources/bottomBar.png");
+}
+.online #westPanel #menu {
+	background-color: #fff;
+	top: 53px;
+	height: 580px;
+}
+.online #westPanel #menuTabs {
+	background-color: #eee;
+	border-bottom-color: #bbb;
+}
+.online #westPanel #menuTabs li.selected {
+	background-color: #e6e6e6;
+	border-color: #bbb;
+	border-bottom-color: #f4f5f6;
+}
+.endScreen {
+	padding-top: 40px;
+}
+.endScreen #endMod_header,
+.endScreen #endCourse_header,
+.endScreen #endTest_header {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.endScreen #endMod_moduleName,
+.endScreen #endCourse_courseName,
+.endScreen #endTest_moduleName {
+	color: #004363;
+}
+.endScreen .dki-themeTextColor {
+	color: #004363;
+}
+.endScreen #endMod_status,
+.endScreen #endCourse_status,
+.endScreen #endTest_status {
+	background-color: #fff;
+	border: 1px solid #bcbdc0;
+	box-shadow: 3px 3px 5px #999;
+	-moz-box-shadow: 3px 3px 5px #999;
+	-webkit-box-shadow: 3px 3px 5px #999;
+	margin-bottom: 10px;
+}
+.endScreen #endMod_status .dki-lineitem,
+.endScreen #endCourse_status .dki-lineitem,
+.endScreen #endTest_status .dki-lineitem {
+	color: #505050;
+}
+.endScreen #endMod_actions a,
+.endScreen #endCourse_actions a,
+.endScreen #endTest_actions a,
+.endScreen #endMod_actions a.disabled,
+.endScreen #endCourse_actions a.disabled,
+.endScreen #endTest_actions a.disabled,
+.endScreen #endMod_actions a.disabled:hover,
+.endScreen #endCourse_actions a.disabled:hover,
+.endScreen #endTest_actions a.disabled:hover,
+.endScreen #endMod_actions a.disabled.active,
+.endScreen #endCourse_actions a.disabled.active,
+.endScreen #endTest_actions a.disabled.active {
+	background-color: #004363;
+	color: #fff;
+	text-shadow: 0 -1px 1px #333;
+	box-shadow: 3px 3px 5px #999;
+	-moz-box-shadow: 3px 3px 5px #999;
+	-webkit-box-shadow: 3px 3px 5px #999;
+}
+.endScreen #endMod_actions a:hover,
+.endScreen #endCourse_actions a:hover,
+.endScreen #endTest_actions a:hover {
+	background-color: #4991a9;
+}
+.endScreen #endScreen .dki-title {
+	color: #fff;
+}
+.endScreen #endScreen .dki-lineitem {
+	font-size: 14px;
+	font-weight: normal;
+	color: #505050;
+}
+.endScreen #endScreen .dki-lineitem .dki-modTitle {
+	font-weight: bold;
+}
+.endScreen #endScreen .dki-lineitem .dki-modBtn {
+	padding: 6px 20px;
+	font-weight: bold;
+	background-color: #004363;
+	box-shadow: none;
+}
+.endScreen #endScreen .dki-lineitem .dki-modBtn:hover {
+ 	background-color: #4991a9;
+}
+/* Info */
+#info {
+	position: relative;
+	width: auto;
+	height: auto;
+	padding: 0;
+	top: 3px;
+	left: 7px;
+	color: #a2a2a2;
+}
+#info #moduleName {
+	font-size: 18px;
+}
+#info #objectName {
+	font-weight: normal;
+}
+
+/* Progress Bar */
+#progressBar {
+	position: relative;
+	width: 350px;
+	height: 13px;
+}
+#progressBar .background {
+	height: 13px;
+	position: absolute;
+}
+#progressBar .background div {
+	float: left;
+	height: 13px;
+}
+#progressBar .background .bg-left {
+	width: 2px;
+	background-image: url("resources/progressBar/left.png");
+}
+#progressBar .background .bg-right {
+	width: 2px;
+	background-image: url("resources/progressBar/right.png");
+}
+#progressBar .background .bg-middle {
+	width: 346px;
+	background-image: url("resources/progressBar/middle.png");
+	background-repeat: repeat-x;
+}
+#progressBar .scrub-bar {
+	position: relative;
+	margin: 2px 0 0 2px;
+	width: 50px;
+	height: 9px;
+	background-image: url("resources/progressBar/scrubber.png");
+}
+#progressBar .ticks {
+	position: relative;
+	top: -12px;
+	margin: 2px 0 0 2px;
+	height: 11px;
+}
+#progressBar .ticks div {
+	height: 11px;
+	float: left;
+}
+#progressBar .ticks .gap {
+	background-image: none;
+}
+#progressBar .ticks .tick {
+	width: 1px;
+	background-image: url("resources/progressBar/divider.png");
+}
+.tablet #progressBar {
+	top: 7px;
+	float: left;
+}
+.online #progressBar {
+	position: absolute;
+	top: 39px;
+	left: 7px;
+}
+
+div.certificate #certificate_print {
+	top:20px;
+	right: 30px;
+}
+
+div.certificate #certificate_date {
+	left:30px;
+}
+
+#logo{
+	width: 300px;
+	height: 43px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	float: left;	
+}
+
+.mobile #logo{
+	margin-left: 5px;
+}
+
+#screenCount {
+	display:none;	
+}
+
+/*buttons*/
+.navButtonContainer {
+	margin-right: 15px;
+}
+#navButtons {
+	width: 125px;
+	display: inline;
+}
+
+.phone #navigationButtons {
+	maring-right: 0px;
+}
+
+.button-left, .button-right, .button-middle, .button-label{
+	display: none !important;
+}
+
+#headerContainer .navButton,
+#footerContainer .navButton {
+	display: inline-block;
+	width: 55px;
+	height: 30px;
+	padding: 0;
+	margin-right: 5px;
+	background-repeat: no-repeat;
+	background-image: url("resources/buttons.png");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='resources/buttons.png');
+}
+#dropdown .dropdown-button{
+	display: block;
+	width: 55px;
+	height: 30px;
+	margin: 5px 5px 0px 5px;
+	background-repeat: no-repeat;
+	background-image: url("resources/buttons.png");
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='resources/buttons.png');
+}
+
+#dropdown .dropdown-button.last {
+  margin-bottom: 5px;
+}
+
+#footerContainer .navButton {
+	top: 30px;
+	
+}
+#headerContainer .navButton {	
+	float: left;
+}
+
+#forwardButton {
+  background-position: 0px 0px;
+}
+#forwardButton:hover {
+  background-position: -55px 0px;
+}
+#forwardButton:active {
+  background-position: -110px 0px;
+}
+
+#headerContainer #forwardButton {
+  background-position: 0px -30px;
+}
+#headerContainer #forwardButton:hover {
+  background-position: -55px -30px;
+}
+#headerContainer #forwardButton:active {
+  background-position: -110px -30px;
+}
+
+#backButton {
+  background-position: 0px -90px;
+}
+#backButton:hover {
+  background-position: -55px -90px;
+}
+#backButton:active {
+  background-position: -110px -90px;
+}
+
+#headerContainer #backButton {
+  background-position: 0px -60px;
+}
+#headerContainer #backButton:hover {
+  background-position: -55px -60px;
+}
+#headerContainer #backButton:active {
+  background-position: -110px -60px;
+}
+
+#listButton, #dropdownButton {
+  background-position: 0px -120px;
+}
+#listButton:hover, #dropdownButton:hover {
+  background-position: -55px -120px;
+}
+#listButton:active, #dropdownButton:active {
+  background-position: -110px -120px;
+}
+
+#headerContainer #listButton{
+	display: none;
+}
+
+#replayButton {
+  background-position: 0px -150px;
+}
+#replayButton:hover {
+  background-position: -55px -150px;
+}
+#replayButton:active {
+  background-position: -110px -150px;
+}
+
+#dropdown #replayButton {
+  background-position: 0px -180px;
+}
+#dropdown #replayButton:hover {
+  background-position: -55px -180px;
+}
+#dropdown #replayButton:active {
+  background-position: -110px -180px;
+}
+
+#resourceButton {
+  background-position: 0px -210px;
+}
+#resourceButton:hover {
+  background-position: -55px -210px;
+}
+#resourceButton:active {
+  background-position: -110px -210px;
+}
+
+#dropdown #resourceButton {
+  background-position: 0px -240px;
+}
+#dropdown #resourceButton:hover {
+  background-position: -55px -240px;
+}
+#dropdown #resourceButton:active {
+  background-position: -110px -240px;
+}
+
+#exitButton {
+  background-position: 0px -270px;
+}
+#exitButton:hover {
+  background-position: -55px -270px;
+}
+#exitButton:active {
+  background-position: -110px -270px;
+}
+
+#dropdown #exitButton {
+  background-position: 0px -300px;
+}
+#dropdown #exitButton:hover {
+  background-position: -55px -300px;
+}
+#dropdown #exitButton:active {
+  background-position: -110px -300px;
+}
+
+#menuButton {
+  background-position: 0px -330px;
+}
+#menuButton:hover {
+  background-position: -55px -330px;
+}
+#menuButton:active {
+  background-position: -110px -330px;
+}
+
+#dropdown #menuButton {
+  background-position: 0px -360px;
+}
+#dropdown #menuButton:hover {
+  background-position: -55px -360px;
+}
+#dropdown #menuButton:active {
+  background-position: -110px -360px;
+}
+
+#transcriptButton {
+  background-position: 0px -390px;
+}
+#transcriptButton:hover {
+  background-position: -55px -390px;
+}
+#transcriptButton:active {
+  background-position: -110px -390px;
+}
+
+#dropdown #transcriptButton {
+  background-position: 0px -420px;
+}
+#dropdown #transcriptButton:hover {
+  background-position: -55px -420px;
+}
+#dropdown #transcriptButton:active {
+  background-position: -110px -420px;
+}
+
+#audioButton.muted {
+  background-position: 0px -450px;
+}
+#audioButton.muted:hover {
+  background-position: -55px -450px;
+}
+#audioButton.muted:active {
+  background-position: -110px -450px;
+}
+
+#dropdown #audioButton.muted {
+  background-position: 0px -480px;
+}
+#dropdown #audioButton.muted:hover {
+  background-position: -55px -480px;
+}
+#dropdown #audioButton.muted:active {
+  background-position: -110px -480px;
+}
+
+#audioButton {
+  background-position: 0px -510px;
+}
+#audioButton:hover {
+  background-position: -55px -510px;
+}
+#audioButton:active {
+  background-position: -110px -510px;
+}
+
+#dropdown #audioButton {
+  background-position: 0px -540px;
+}
+#dropdown #audioButton:hover {
+  background-position: -55px -540px;
+}
+#dropdown #audioButton:active {
+  background-position: -110px -540px;
+}
+
+#glossaryButton {
+  background-position: 0px -570px;
+}
+#glossaryButton:hover {
+  background-position: -55px -570px;
+}
+#glossaryButton:active {
+  background-position: -110px -570px;
+}
+
+#dropdown #glossaryButton {
+  background-position: 0px -600px;
+}
+#dropdown #glossaryButton:hover {
+  background-position: -55px -600px;
+}
+#dropdown #glossaryButton:active {
+  background-position: -110px -600px;
+}
+
+#dropdown {
+  position: absolute;
+  top: 36px;
+  left: 125px;
+  z-index: 1000000;
+  border: 1px solid #707070;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #ccc;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e8e8e8), to(#c1c1c1));
+  background-image: -webkit-linear-gradient(top, #e8e8e8, #c1c1c1);
+  background-image: -moz-linear-gradient(top, #e8e8e8, #c1c1c1);
+  background-image: -ms-linear-gradient(top, #e8e8e8, #c1c1c1);
+  background-image: -o-linear-gradient(top, #e8e8e8, #c1c1c1);
+  background-image: linear-gradient(to bottom, #e8e8e8, #c1c1c1);
+  box-shadow: 3px 3px 8px #888f8f;
+  -moz-box-shadow: 3px 3px 8px #888f8f;
+  -webkit-box-shadow: 3px 3px 8px #888f8f;
+}
+
+
+#dropdown.hidden {
+  display: none;
+}
+
+.phone #dropdownButton{
+	margin-left: 5px;
+}
+.phone #dropdown{
+	top: 32px;
+	left: 5px;
+}
+.phone #screenCount{
+	position: relative;
+	display:block;
+	color: #e2e2e2;
+	display: inline-block;
+	font-size: 20px;
+	height: 30px;
+	width: 110px;
+	line-height: 30px;	
+	padding-right: 15px;
+	text-align: center;
+	float:left;
+}	
+
+@media handheld, only screen and (max-width: 700px) {
+}
+
+@media handheld, only screen and (max-width: 425px) {
+}
+
+

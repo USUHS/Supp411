@@ -1,0 +1,42 @@
+
+	<!DOCTYPE html>
+	<html class="light">
+		<head>			
+			<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+			<style>
+				html{
+					font-size: 14px;
+					color: #333;
+				}
+				.message{
+					text-align: center;					
+				}
+				.buttonWrapper{
+					text-align: center;
+				}
+				#popupBlocked{
+					display: none;
+				}
+			</style>				
+		</head>
+		<body onload="init();" onbeforeunload="beforeUnload();">
+			<div class="message launch">Please wait while your course opens in a new window.</div>
+			<div class="message dontClose">Do NOT close this window while you are taking this course or your results will not be recorded.</div>
+			<div class="buttonWrapper">
+				<input type="button" value="Launch Course" onclick="launchWindow()" />
+			</div>
+		</body>
+		<script>
+			var courseWin = null;
+			function init(){
+				launchWindow();				
+			}
+			function launchWindow(){
+				courseWin = window.open("index.html", "courseWin", "width=1010, height=703, resizable=yes, channelmode=no, directories=no, fullscreen=no, location=no, menubar=no, scrollbars=yes, status=no, titlebar=no, toolbar=no");
+			}
+			function beforeUnload(){
+				courseWin.close();
+			}		
+		</script>			
+	</html>
+	

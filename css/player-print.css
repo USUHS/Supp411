@@ -1,0 +1,8 @@
+#headerContainer,
+#footerContainer,
+#westPanel,
+#feedbackTab,
+#feedbackPanel,
+#moreOverlay {
+	display:none;
+}

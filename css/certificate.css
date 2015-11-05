@@ -1,0 +1,37 @@
+.certificate {
+	padding-top:30px;
+	font-family: Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+.certificate h1 {
+	font-size: 32px;
+	font-weight: bold;
+}
+#certificate_studentName {
+	display:block;
+	font-size:24px;
+	font-weight: bold;
+	padding:10px 0 10px 0;
+}
+#certificate_courseName {
+	display:block;
+	font-size:24px;
+	font-weight: bold;
+	padding:10px 0 10px 0;
+}
+#certificate_date {
+	display:block;
+	position:absolute;
+	bottom:10px;
+	left:10px;
+}
+#certificate_print {
+	display:block;
+	position:absolute;
+	top:10px;
+	right:10px;
+}
+#certificate_signature {
+	display:none;
+}

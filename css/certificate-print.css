@@ -1,0 +1,8 @@
+#certificate_print {
+	display:none;
+}
+#certificate_date {
+	position:absolute;
+	bottom:10;
+	left:10;
+}

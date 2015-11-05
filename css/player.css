@@ -1,0 +1,153 @@
+html {
+	overflow: hidden;
+}
+
+
+#contentFrame,
+.dkiContentFrame {
+	overflow: hidden;
+}
+
+
+
+
+/* Navigation */
+
+#audioButton.muted span{
+	text-decoration:line-through;
+}
+
+#backButton {
+	xfloat:left;
+}
+
+#footerContainer {
+	height:60px;
+}
+
+#headerContainer, #footerContainer {
+	display:block;
+	position:relative;
+}
+
+#headerContainer {
+	height:43px;
+}
+
+#footerContainer .navButton {
+	top:30px;
+	height:30px;
+}
+#footerContainer a.navButton {
+	float: left;
+}
+
+#headerContainer .navButton {
+	height:33px;
+}
+
+#info {
+	height:100%;
+	float:left;
+	width:40%;
+	padding-left:10px;
+}
+
+#navButtons {
+	position:relative;
+	float:right;
+	height:100%;
+	width: 130px;
+	display:inline-block;
+}
+
+#moduleName, #objectName {
+	display:block;
+	width:100%;
+	height:50%;
+	vertical-align:bottom;
+	text-align: left;
+}
+
+#screenCount {
+	display:block;
+	position:absolute;
+	top:10px;left:0px;
+	height:20px;
+	width:100%;
+	text-align:center;
+	white-space: nowrap;
+}
+
+.navButtonContainer{
+	float:right;
+}
+
+.navButton {
+	cursor: pointer;
+	margin-right: 5px;
+	padding:0px 5px 0px 5px;
+	position:relative;
+	display: inline-block;
+}
+
+#headerContainer .navButton.disabled, #footerContainer .navButton.disabled, .navButton.disabled {
+	opacity:0.3;
+	moz-opacity:0.3;
+	filter:alpha(opacity=30);
+	cursor:default;
+}
+
+
+.navButton span {
+	display:inline-block;
+	padding-top: 10px;
+}
+
+.navButton .button-label{
+	display:inline;
+	padding-top: 0px;
+}
+
+#logo {
+	display:none;
+}
+
+#westPanel div.innerBlockScroll{
+	top 				: 30px;
+	width 				: 289px;
+	height 				: 427px;
+	background-color 	: #ffffff;
+} 
+
+#westPanel div.menuHeader {
+	height: 30px;
+}
+
+#transcriptContent div.content, #notesContent div.content{
+    background-color 	: #F3F3F3;
+    border 				: 1px solid #B9B9B9;
+    font-weight 		: normal;
+    height 				: 406px;
+    overflow-x 			: hidden;
+    overflow-y			: auto;
+    position 			: absolute;
+    top 				: 21px;
+    width 				: 292px;
+
+	border-bottom-left-radius			: 10px;
+	-webkit-border-bottom-left-radius	: 10px;
+	-moz-border-radius-bottomleft		: 10px;    
+	border-bottom-right-radius			: 10px;
+	-webkit-border-bottom-right-radius	: 10px;
+	-moz-border-radius-bottomright		: 10px;
+
+}
+
+a.submitButton span.buttonPartial.left,
+a.submitButton span.buttonPartial.right{
+	display:none;
+}
+
+
+

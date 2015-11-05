@@ -1,0 +1,26 @@
+ul.jsonSuggest {
+	position: absolute;
+	background-color: #FFFFFF;
+	border-bottom:1px solid #BBB;
+	border-left : 1px solid #BBB;
+	border-right: 1px solid #BBB;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-left-radius: 3px;	
+	-webkit-border-bottom-right-radius: 3px;	
+	margin: 0px;
+	padding-right:10px;
+}
+
+ul.jsonSuggest li {
+	padding: 5px 0px 5px 10px;
+	list-style: none;
+	cursor: pointer;
+	margin: 0px;
+}
+
+ul.jsonSuggest li.resultHover {
+	background-color: #F3F3F3;
+}
