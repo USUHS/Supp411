@@ -1,0 +1,463 @@
+
+white = #ffffff
+black = #000000
+blue = #4991a9
+darkGrey = #505050
+darkBlue = #004363
+gradientStart = #E8E8E8
+gradientEnd = #C1C1C1
+
+navText()
+  font-family "Arial", "Helvetica", sans-serif
+  font-weight bold
+  font-size 14px
+  color #6b6b6b
+
+borderRadius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  -o-border-radius n
+  border-radius n
+
+boxShadow(a,b,c,d)
+  box-shadow a b c d
+  -moz-box-shadow a b c d
+  -webkit-box-shadow a b c d
+
+downGradient(color1, color2, fallback)
+  background-color fallback
+  background-image -webkit-gradient(linear, left top, left bottom, from(color1), to(color2))
+  background-image -webkit-linear-gradient(top, color1, color2)
+  background-image -moz-linear-gradient(top, color1, color2)
+  background-image -ms-linear-gradient(top, color1, color2)
+  background-image -o-linear-gradient(top, color1, color2)
+  background-image linear-gradient(to bottom, color1, color2)
+
+backgroundImage(image)
+  background-image: url(image)
+  filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src=%s)" % image
+
+#headerContainer
+  height: 43px
+  width: 1010px
+  background-color white
+  background-image url(resources/topBar.png)
+  navText()
+
+#contentFrame
+  height 600px
+  width 1010px
+  background-color white
+  background-image url(resources/background.png)
+
+.online
+
+  #footerContainer
+    height 60px
+    width 1010px
+    background-image url(resources/bottomBar.png)
+    navText()
+
+  #westPanel
+    #menu
+      background-color white
+      top 53px
+      height 580px
+
+    #menuTabs
+      background-color #eeeeee
+      border-bottom-color #bbbbbb
+
+      li.selected
+        background-color #e6e6e6
+        border-color #bbbbbb
+        border-bottom-color #f4f5f6
+
+.endScreen
+  font-family "Arial", "Helvetica", sans-serif
+  font-weight bold
+  font-size 18px
+  color #6b6b6b
+
+  #endMod_header,
+  #endCourse_header,
+  #endTest_header
+    margin-top 40px
+    font-size 18px
+    font-weight bold
+    text-align center
+
+  #endMod_moduleName,
+  #endCourse_courseName,
+  #endTest_moduleName
+    color darkBlue
+
+  .dki-themeTextColor
+    color darkBlue
+
+  #endMod_status,
+  #endCourse_status,
+  #endTest_status
+    background-color white
+    border 1px solid #bcbdc0
+    boxShadow 3px 3px 5px #999999
+    margin-bottom 10px
+
+    .dki-lineitem
+      color darkGrey
+
+  #endMod_actions,
+  #endCourse_actions,
+  #endTest_actions
+    a
+    a.disabled
+    a.disabled:hover
+    a.disabled.active
+      background-color darkBlue
+      color white
+      text-shadow 0 -1px 1px #333333
+      boxShadow 3px 3px 5px #999999
+
+    a
+      &:hover
+        background-color blue
+
+  #endScreen
+    .dki-title
+      color white
+
+    .dki-lineitem
+      font-size 14px
+      font-weight normal
+      color darkGrey
+
+      .dki-modTitle
+        font-weight bold
+
+      .dki-modBtn
+        padding 6px 20px
+        font-weight bold
+        background-color darkBlue
+        box-shadow none
+
+        &:hover
+          background-color blue
+
+/* Info */
+#info
+  position fixed
+  width auto
+  height auto
+  padding 0
+  top 4px
+  left 40px
+  color darkGrey
+
+  #moduleName
+    font-size 18px
+
+  #objectName
+    font-weight normal
+
+/* Button styles */
+.navButtonContainer
+  margin-right 15px
+
+#navButtons
+  width auto
+  display inline
+
+  #screenCount
+    position fixed
+    top 682px
+    left 389px
+    width auto
+    height auto
+    font-size 11px
+    text-align left
+    font-weight bold
+    color black
+
+#headerContainer,
+#footerContainer
+  .navButton
+    display: inline-block
+    width: 59px
+    height: 32px
+    padding: 0
+    margin-right: 5px
+    background-repeat: no-repeat
+    backgroundImage('resources/button_sprites.png')
+
+    .button-left,
+    .button-right,
+    .button-middle,
+    .button-label
+      display: none
+
+#audioButton
+  background-position: 0px -128px
+
+  &:hover
+    background-position: -59px 0px
+
+  &:active
+    background-position: 0px -96px
+
+  &.muted
+    background-position: 0px -32px
+
+    &:hover
+      background-position: 0px -64px
+
+    &:active
+      background-position: 0px 0px
+
+#exitButton
+  background-position: -118px 0px
+
+  &:hover
+    background-position: -118px -32px
+
+  &:active
+    background-position: -59px -128px
+
+#menuButton
+  background-position: -177px -32px
+
+  &:hover
+    background-position: -177px -64px
+
+  &:active
+    background-position: -177px 0px
+
+#forwardButton
+  background-position: -177px -128px
+
+  &:hover
+    background-position: -236px 0px
+
+  &:active
+    background-position: -177px -96px
+
+#backButton
+  background-position: -295px 0px
+
+  &:hover
+    background-position: -354px 0px
+
+  &:active
+    background-position: -236px -32px
+
+#replayButton
+  background-position: -354px -32px
+
+  &:hover
+    background-position: -236px -64px
+
+  &:active
+    background-position: -295px -32px
+
+#transcriptButton
+  background-position: -295px -96px
+
+  &:hover
+    background-position: -354px -96px
+
+  &:active
+    background-position: -354px -64px
+
+/* Mobile */
+.mobile
+  #headerContainer
+    .navButton
+      margin-right 5px
+      margin-left 0
+      color #6b6b6b
+
+    #listButton
+      display none
+
+    #backButton,
+    #forwardButton
+      width 59px
+      height 32px
+      backgroundImage('resources/mobile_buttons.png')
+
+      span
+        display none
+
+    #forwardButton
+      background-position -236px 0px
+
+      &:hover
+        background-position -236px -32px
+
+      &:active
+        background-position -177px -96px
+
+    #backButton
+      background-position -236px -96px
+
+      &:hover
+        background-position -295px 0px
+
+      &:active
+        background-position -236px -64px
+
+  #moreButtons
+    .navButton
+      padding-right 0
+
+    #exitButton,
+    #menuButton
+      .button-middle
+        width 50px
+        text-align center
+
+    #dropdownButton
+      background-position -59px -64px
+
+      &:hover
+        background-position -59px -96px
+
+      &:active
+        background-position -59px -32px
+
+      .button-middle
+        top 0px
+
+      .button-label
+        width 21px
+        height 30px
+
+  #dropdown
+    position absolute
+    top 36px
+    left 136px
+    z-index 1000000
+    border 1px solid #707070
+    borderRadius(4px)
+    downGradient(gradientStart, gradientEnd, #CCCCCC)
+    boxShadow(3px, 3px, 8px, #888F8F)
+
+    &.hidden
+      display none
+
+    .dropdown-button
+      display block
+      margin 5px 5px 0px 5px
+      height 32px
+      width 59px
+      cursor pointer
+      backgroundImage('resources/mobile_buttons.png')
+
+      .button-left,
+      .button-middle,
+      .button-right
+        display none
+
+      &.last
+        margin-bottom 5px
+
+    #audioButton
+      background-position -59px 0px
+
+      &:hover
+        background-position -59px -32px
+
+      &:active
+        background-position 0px -96px
+
+      &.muted
+        background-position 0px -32px
+
+        &:hover
+          background-position 0px -64px
+
+        &:active
+          background-position 0px 0px
+
+    #replayButton
+      background-position -413px 0px
+
+      &:hover
+        background-position -295px -32px
+
+      &:active
+        background-position -354px 0px
+
+    #transcriptButton
+      background-position -354px -64px
+
+      &:hover
+        background-position -354px -96px
+
+      &:active
+        background-position -413px -32px
+
+  #screenCount
+    top -7px
+    left 557px
+    font-size 11px
+    text-align left
+    color black
+
+/* Progress Bar */
+#progressBar
+  position absolute
+  width 350px
+  height 13px
+
+  .background
+    height 13px
+    position absolute
+
+    div
+      float left
+      height 13px
+
+    .bg-left
+      width 2px
+      background-image url("resources/playerControls_left.png")
+
+    .bg-right
+      width 2px
+      background-image url("resources/playerControls_right.png")
+
+    .bg-middle
+      width 346px
+      background-image url("resources/playerControls_middle.png")
+      background-repeat repeat-x
+
+  .scrub-bar
+    position relative
+    margin 2px 0 0 2px
+    width 50px
+    height 9px
+    background-image url("resources/playerControls_scrubber.png")
+
+  .ticks
+    position relative
+    top -12px
+    margin 2px 0 0 2px
+    height 11px
+
+    div
+      height 11px
+      float left
+
+    .gap
+      background-image none
+
+    .tick
+      width 1px
+      background-image url("resources/progressDivider.png")
+
+.tablet #progressBar
+  top 7px
+  left 200px
+
+.online #progressBar
+  top 39px
+  left 34px

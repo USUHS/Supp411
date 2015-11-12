@@ -1,0 +1,1 @@
+[{"time":4000,"parameters":{"hideOthers":false,"effectOptions":{"direction":"right"},"effect":"fade"},"id":226486,"targetGroups":[],"targetElements":[540992.0,540993.0,540994.0],"pageId":50004,"type":"show","trigger":"time"}]

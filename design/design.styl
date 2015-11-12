@@ -1,0 +1,237 @@
+darkBlue = #004363
+darkGrey = #505050
+lightGrey = #6b6b6b
+white = #ffffff
+black = #000000
+
+bodyText()
+  font-family "Arial", "Helvetica", sans-serif
+
+borderRadius(n)
+  border-radius n
+  -moz-border-radius n
+  -webkit-border-radius n
+
+borderRadiusTop(n)
+  border-top-left-radius n
+  -moz-border-top-left-radius n
+  -webkit-border-top-left-radius n
+  border-top-right-radius n
+  -moz-border-top-right-radius n
+  -webkit-border-top-right-radius n
+
+boxShadow(a,b,c,d)
+  box-shadow a b c d
+  -moz-box-shadow a b c d
+  -webkit-box-shadow a b c d
+
+.title-text
+  font-size 40px
+  font-weight bold
+  color darkGrey
+  bodyText()
+
+.subtitle-text
+  font-size 29px
+  font-weight bold
+  color darkBlue
+  bodyText()
+
+.header-text
+  font-size 24px
+  font-weight bold
+  color darkBlue
+  bodyText()
+
+.content
+  font-size 20px
+  color darkGrey
+  bodyText()
+
+  ul li,
+  ol li
+    font-size 20px
+    color darkGrey
+
+.footer-text
+  font-size 18px
+  color darkGrey
+  bodyText()
+
+.dki-body-background,
+.contentFrame
+  background-color white
+  background-image url("resources/background.png")
+
+.dki-table-element
+  thead
+    tr,
+    td
+      background-color #4991A9
+      color white
+  table,
+  tr,
+  td
+    background-color #AFAFAF
+    border-color #000
+    color #505050
+
+.questionOpening,
+.questionBody,
+.dki-trueFalseOption-element .content,
+.dki-fillBlanksOption-element .content,
+.dki-multiChoiceOption-element .content,
+.dki-multiPulldownOption-element .content
+  font-size 16px
+  color darkGrey
+
+.submitButton
+  height 32px
+  width 108px
+  line-height 32px
+  right 35px
+  bottom 75px
+  text-align center
+  text-decoration none
+  background-image url("resources/testing/submitButton.png")
+  background-position 0px -5px
+  color lightGrey
+  font-size 14px
+  font-weight bold
+  bodyText()
+
+  &:hover
+    background-position 0px -55px
+
+  &:active
+    background-position 0px -107px
+
+.feedbackWrapper
+  background-color #eeeeee
+  color black
+  min-height 120px
+  width 350px
+  top 50%
+  left 50%
+  padding-bottom 10px
+  margin-left -175px
+  margin-top -60px
+  borderRadius 10px
+  border 1px solid #cccccc
+
+.feedbackHeader
+  color white
+  height 19px
+  width 100%
+  line-height 19px
+  background-image url(resources/testing/panel_headerMid.png)
+  background-position 0 -5px
+  background-repeat repeat-x
+  background-color transparent
+  borderRadiusTop 10px
+
+.feedbackClose
+  background-image url(resources/testing/panel_closeButton.png)
+  background-color transparent
+  cursor pointer
+  display block
+  position absolute
+  width 25px
+  height 25px
+  top -7px
+  right -6px
+
+.questionFeedback
+  padding 0px 10px 10px 10px
+
+.dki-trueFalseOption-element,
+.dki-fillBlanksOption-element,
+.dki-multiChoiceOption-element,
+.dki-multiPulldownOption-element
+  .correct,
+  .incorrect
+    background-position 0 4px
+
+  .correct
+    background-image url("resources/testing/correct.png")
+
+  .incorrect
+    background-image url("resources/testing/incorrect.png")
+
+  .multiChoiceCorrectResponse
+    border none
+
+
+#foo:checked::before,
+.dki-trueFalseOption-element,
+.dki-multiChoiceOption-element
+  .content
+    input[type=checkbox]
+      position absolute
+      clip rect(0,0,0,0)
+      clip rect(0 0 0 0)
+
+    input[type=checkbox] + label::before
+      content url("resources/testing/checkbox_normal.png")
+      padding-right 5px
+    input[type=checkbox]:checked + label::before
+      content url("resources/testing/checkbox_clicked.png")
+
+    input[type=radio]
+      position absolute
+      clip rect(0,0,0,0)
+      clip rect(0 0 0 0)
+
+    input[type=radio] + label::before
+      content url("resources/testing/radioButton_normal.png")
+      padding-right 5px
+    input[type=radio]:checked + label::before
+      content url("resources/testing/radioButton_clicked.png")
+
+    &:hover
+      background-color #d1deeB
+      borderRadius(10px)
+
+  .multiChoiceCorrectResponse
+    background-image none;
+
+    input[type=checkbox] + label::before
+      content url(resources/testing/checkbox_normal_correct.png)
+    input[type=checkbox]:checked + label::before
+      content url(resources/testing/checkbox_clicked_correct.png)
+
+    input[type=radio] + label::before
+      content url(resources/testing/radioButton_normal_correct.png)
+    input[type=radio]:checked + label::before
+      content url(resources/testing/radioButton_clicked_correct.png)
+
+  .correct
+    background-image none
+
+    input[type=checkbox] + label::before
+      content url(resources/testing/checkbox_normal_correct.png)
+    input[type=checkbox]:checked + label::before
+      content url(resources/testing/checkbox_clicked_correct.png)
+
+    input[type=radio] + label::before
+      content url(resources/testing/radioButton_normal_correct.png)
+    input[type=radio]:checked + label::before
+      content url(resources/testing/radioButton_clicked_correct.png)
+
+  .incorrect
+    background-image none
+
+    input[type=checkbox] + label::before
+      content url(resources/testing/checkbox_normal_incorrect.png)
+    input[type=checkbox]:checked + label::before
+      content url(resources/testing/checkbox_clicked_incorrect.png)
+
+    input[type=radio] + label::before
+      content url(resources/testing/radioButton_normal_incorrect.png)
+    input[type=radio]:checked + label::before
+      content url(resources/testing/radioButton_clicked_incorrect.png)
+
+.questionScoreDisplay
+  position absolute
+  bottom 20px
+  right 50px

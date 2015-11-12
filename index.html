@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-	<html class="coursePlayer noNav light ltr" dir="ltr" lang="en-US">
+	<html class="coursePlayer topOnly dark ltr" dir="ltr" lang="en-US">
 		<head id="head" data-viewport-width="1010">
 			<meta http-equiv="Content-Type" content="text/html;charset=utf-8">			
 			<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -44,8 +44,11 @@
 			<link rel="stylesheet" href="css/prompt.css" />
 			<link rel="stylesheet" href="css/browserWarning.css" />
 			
-				<link rel="stylesheet" href="css/player.css" />
-			
+				<meta name="apple-mobile-web-app-capable" content="yes" />
+				<link rel="stylesheet" href="css/mobile/player.css" />
+				
+					<link rel="stylesheet" href="css/mobile/tablet.css" />
+				
 			<link rel="stylesheet" href="css/feedback.css" />
 			
 			<!--[if lte IE 8]>
@@ -108,10 +111,10 @@
 					overflow: hidden;
 				}
 				
-						body.online #contentFrame .dkiContentFrame { 
+						html { 
 							overflow-y: auto;
-							overflow-x: auto;
-						}
+							overflow-x: hidden;							
+						}			
 					
 				body.mobile #contentFrame { 
 					width:1010px;
@@ -123,17 +126,6 @@
 				.dkiContentFrame{height:600px;}	
 				
 				/* if we have a no nav bars course, we need to hide and shrink the nav bas */						
-				
-					#headerContainer, #footerContainer {
-						height: 0px !important;
-						display: none !important;
-					}
-					#contentFrame{
-						margin-top: 0px !important;
-					}
-					body.mobile .reviewerTab{
-						top: 0px !important;
-					}
 				
 			</style>
 			<!--[if lte IE 7]>
@@ -167,19 +159,21 @@
 			<![endif]-->
 			<title>Course Player</title>
 			<script src="scripts/dkiUA.js"></script>			
+			
+				<script src="scripts/viewport.js"></script>
 									
 		</head>
-		<body class="online">
+		<body class="mobile tablet">
 			
 			<div id="headerContainer" role="navigation"></div>
 			
 			<div class="bgRepeater">
 				<div id="contentFrame">
-					<div id='page_52542' class='design pageElementsWrapper' data-pagetype='page' data-pageid='52542' data-locked='0' data-preview='false' style='z-index:0;' ></div>
+					<div id='page_6808' class='design pageElementsWrapper' data-pagetype='page' data-pageid='6808' data-locked='0' data-preview='false' style='z-index:0;' ><div data-id='41333' id='group_41333' class='dki-authoring-group ' style='background-color:transparent;background-position:center center;background-repeat:no-repeat;background-size:initial;overflow:visible;z-index:1;' ><div  id='55517_wrapper'  class='dki-authoring-element dki-image-element'   data-id='55517' data-type='image' data-opacity='100' data-cssclass='' data-title='' data-description='' data-placeholderid='' data-templateLayout='' data-narration='' data-elementno='1' data-templatebuttonid='' data-assetid='' data-multimedia='false' data-groupid='41333' data-ignoredfromdocumentpublish='false' data-text='' data-is-draggable='false' data-draggable-revert='true' data-draggable-constrain-x='false' data-draggable-constrain-y='false' data-draggable-bring-to-front='true' data-is-droppable='false' data-droppable-snap-to-center='false' data-dragdropid='3f3242bd-6c10-437e-9668-e2ad96708953' data-meta='' data-renderHidden="false" data-dontPause="false" data-dontHide="false" data-locked='false'data-height='600' data-width='1010' data-x='0' data-y='0' data-textstyles-fontsize='' data-textstyles-lineheight='' data-textstyles-classname='' data-responsive-width='12' data-responsive-alignment-vertical='top' data-responsive-alignment-horizontal='left' data-margin-left='0' data-margin-top='0' data-margin-right='0' data-margin-bottom='0' data-padding-left='0' data-padding-top='0' data-padding-right='0' data-padding-bottom='0' data-background-color='transparent' data-background-position-horizontal='center'  data-background-position-vertical='center'  data-background-repeat='no-repeat'  data-background-size='contain'  data-border-top='none'  data-border-bottom='none'  data-border-left='none'  data-border-right='none'  data-border-radius='none'  data-accessibility-text=''  data-accessibility-tabable='true'  data-rolloverassetid=''  data-rollovereffect=''  data-rollouteffect=''  data-rotation='0'  style='height:600px;width:1010px;left:0px;top:0px;z-index:1;margin-top: 0%;margin-left: 0%;margin-right: 0%;margin-bottom: 0%;'><div id='anchor_55517' class='dki-element-anchor'  data-tabindex='1' tabIndex='1' title='' ></div><div  id='55517_content_wrapper' class='dki-authoring-content-wrapper  'style='width:100%;height:100%;padding-top: 0%;padding-left: 0%;padding-right: 0%;padding-bottom: 0%;text-align: left;overflow: visible;'><img  data-src='design/resources/background.png' src='design/resources/background.png'alt='' title='' align='top' id='content_55517' class='dki-element-content  pngFix' style='top:0;left:0;z-index:1; width:100%;height:100%;' /></div></div></div></div>
 				</div>
 				
 			</div>
-			<a class="submitButton " style="display:none">
+			<a class="submitButton mobile" style="display:none">
 				<span class="buttonPartial left"></span>
 				<span class="buttonPartial middle">Submit</span>
 				<span class="buttonPartial right"></span>
@@ -205,6 +199,8 @@
 			</div>
 			
 			
+			
+			<div id="moreOverlay"></div>
 			
 			<script src="scripts/modernizr.js"></script>
 			<script src="scripts/external/jquery/jquery.js"></script>
@@ -320,7 +316,7 @@
 					swfPath: 'scripts/external/jquery/jplayer',
 					scrolling: false,
 					courseHeight: 600,
-					courseType : 3,
+					courseType : 2,
 					nativeVideoControls : {
 						iphone: /iphone/,
 						ipod: /ipod/,
@@ -485,7 +481,10 @@
 							settings: settings,
 							languageString : DKI.strings.resources
 						});
-					
+									
+						var skipToNav = $('<a id="skipToNavigation" class="navButton" tabindex="0" role="button"title = "Skip to navigation."></a>');
+						$("body").append(skipToNav);
+							
 				});
 				player.loadCompletion();
 			</script>

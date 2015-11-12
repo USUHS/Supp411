@@ -73,18 +73,11 @@
 					'<span class="button-right"></span>',
 				'</div>'
 			].join(""));
-			if ($(document.body).hasClass('tablet')) {
-				moreButtons.append(ddBtn);
-			}
-			else{
-				moreButtons.before(ddBtn);
-			}
+			moreButtons.append(ddBtn);
+
 			dropDown = $('<div id="dropdown" class="hidden"></div>');
 			$('body').append(dropDown);
-			if ($(document.body).hasClass('phone')) {
-				dropDown.append(exitBtn.addClass('dropdown-button').removeClass('navButton'));
-				dropDown.append(menuBtn.addClass('dropdown-button').removeClass('navButton'));
-			}
+
 			dropdownButtons.each(function() {
 				$(this).append([
 					'<div class="button-left"></div>',
@@ -110,22 +103,16 @@
 					'</span>',
 					'<span class="button-right"></span>'
 				].join("")));
-			});
-			
-			if($(document.body).hasClass('tablet')){
-				var logo = $('#logo').detach();
-				$("#navigationButtons").before(logo);
-			}
-			
+			})
 			$("#headerContainer *").css("visibility", "visible");
 		},
 
 		bindEvents: function() {
 			// DOM Events
 			if ($('body').hasClass('mobile')) {
-				$('#dropdownButton').on('click', DropDown.toggle);
+				$('#dropdownButton').on(settings.clickEvent, DropDown.toggle);
 				$(document).on('click', DropDown.hide);
-				$('.dropdown-button').on('click', DropDown.hide);
+				$('.dropdown-button').on(settings.clickEvent, DropDown.hide);
 			}
 			// Player Events
 			contentApi.playerEvent.on('pageLoaded',
@@ -136,7 +123,10 @@
 	var DropDown = {
 		toggle: function(e) {
 			var dropDown = $('#dropdown');
-
+			var position = $(this).offset();
+			dropDown.css({
+				left: position.left + "px"
+			})
 			if (dropDown.hasClass('hidden')) {
 				dropDown.removeClass('hidden');
 			} else {
@@ -145,63 +135,62 @@
 		},
 
 		hide: function(e) {
-			if ($(e.target).closest('#audioButton,#dropdownButton').length === 0) {
+			if ($(e.target).closest('#dropdownButton').length === 0) {
 				$('#dropdown').addClass('hidden');
 			}
 		}
 	};
 
 	var ProgressBar = {
-		maxWidth: null,
+		maxWidth : null,
+		current  : null,
+		total    : null,
 		init: function() {
 			var progressBar = $([
 				'<div id="progressBar">',
-					'<div class="background">',
-						'<div class="bg-left"></div>',
-						'<div class="bg-middle"></div>',
-						'<div class="bg-right"></div>',
-					'</div>',
-					'<div class="scrub-bar"></div>',
-					'<div class="ticks"></div>',
 				'</div>'
 			].join(""));
 
-			if ($('body').hasClass('tablet')) {
-				$('#navigationButtons').before(progressBar);
-			} else {
-				$('#footerContainer').append(progressBar);
-			}
+			$('#navigationButtons').after(progressBar);
+			//Progress bar width is percentage based... get the int value the long way and make sure to subtract the sizes of the left and right spans	
+			$(window).resize(ProgressBar.resize);
 
-			ProgressBar.maxWidth = $('#progressBar .bg-middle').width();
+			//Hide Progress Bar for end screens
+			$(document).on(DKI.EndModule.events.started, ProgressBar.hide);
+			$(document).on(DKI.EndTest.events.started, ProgressBar.hide);
+			$(document).on(DKI.EndCourse.events.started, ProgressBar.hide);
+
 		},
 		render: function() {
-			var current = parseFloat($('#screenCount #currentScreen').text()),
-				total = parseFloat($('#screenCount #totalScreens').text()),
-				percentage = (current / total),
-				progress = percentage * ProgressBar.maxWidth,
-				totalTicks = total - 1,
-				tickSize = 1, // Pixel size of the tick marks
-				gapWidth = ((ProgressBar.maxWidth - (tickSize * totalTicks)) / total),
-				gapRounder = (gapWidth % 1 < 0.5)? 1 : 0,
-				ticks = $('#progressBar .ticks'),
-				currentGapWidth;
+			ProgressBar.current = parseFloat($('#screenCount #currentScreen').text());
+			ProgressBar.total = parseFloat($('#screenCount #totalScreens').text());
+			var container = $("#progressBar");
+			container.html("<div class='tickContainer'></div>");
 
-			$('#progressBar .scrub-bar').width(progress);
-
-			// Clear existing ticks
-			$('div', ticks).remove();
-
-			// Render gaps and ticks
-			for (var i = 0; i < total; i++) {
-				currentGapWidth = Math.floor((i % 2 == gapRounder)? gapWidth : gapWidth + 1);
-
-				ticks.append('<div class="gap" style="width:' +
-					currentGapWidth + 'px;"></div>');
-
-				if (i < totalTicks) ticks.append('<div class="tick"></div>');
+			var tickContainer = $("div.tickContainer");
+			for(var i = 0; i < ProgressBar.current; i++) {
+				var tick = $("<div />", {
+					"class" : "tick"
+				});
+				tickContainer.append(tick);
 			}
+			ProgressBar.setWidths();
 			$("#progressBar").css("visibility", "visible");
 			$("#progressBar *").css("visibility", "visible");
+
+		},
+		resize : function(e) {
+			ProgressBar.setWidths();
+		},
+		setWidths : function() {
+			ProgressBar.maxWidth = $("#progressBar").width();
+			var barWidth = (ProgressBar.current/ProgressBar.total) * ProgressBar.maxWidth,
+				tickWidth  = barWidth/ProgressBar.current - 1
+			$("#progressBar div.tick").width(tickWidth);
+		},
+		hide : function() {
+			$("#progressBar").css("visibility", "hidden");
+			$("#progressBar *").css("visibility", "hidden");
 		}
 	};
 
@@ -210,7 +199,7 @@
 		if ($('body').hasClass('mobile')) {
 			Init.restructureButtons();
 		}
-		
+
 		ProgressBar.init();
 		Init.bindEvents();
 

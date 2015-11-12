@@ -1,31 +1,34 @@
-body, html {
-  font-family: "Arial", "Helvetica", sans-serif;
-}
 .title-text {
   font-size: 40px;
+  font-weight: bold;
   color: #505050;
-  
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 .subtitle-text {
   font-size: 29px;
+  font-weight: bold;
   color: #004363;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 .header-text {
   font-size: 24px;
+  font-weight: bold;
   color: #004363;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 .content {
   font-size: 18px;
   color: #505050;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 .content ul li,
 .content ol li {
-  font-size: inherit;
-  color: inherit;
+  color: #505050;
 }
 .footer-text {
   font-size: 18px;
   color: #505050;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 .dki-body-background,
 .contentFrame {
@@ -54,6 +57,8 @@ body, html {
 .dki-fillBlanksOption-element .content,
 .dki-multiChoiceOption-element .content,
 .dki-multiPulldownOption-element .content {
+  font-size: 16px;
+  color: #505050;
 }
 .submitButton {
   height: 32px;
@@ -62,6 +67,8 @@ body, html {
   text-decoration: none;
   color: #6b6b6b;
   font-size: 14px;
+  font-weight: bold;
+  font-family: "Arial", "Helvetica", sans-serif;
 }
 a.submitButton span.buttonPartial.left,
 a.submitButton span.buttonPartial.right{
@@ -139,6 +146,7 @@ a.submitButton span.buttonPartial.middle {
   padding: 0px 10px 10px 10px;
 }
 
+
 .multiChoiceCorrectResponse {
   border: none;
 }
@@ -174,7 +182,11 @@ a.submitButton span.buttonPartial.middle {
 }
 
 .dki-trueFalseOption-element .content:hover,
-.dki-multiChoiceOption-element .content:hover {
+.dki-multiChoiceOption-element .content:hover ,
+.dki-trueFalseOption-element .correct .content,
+.dki-multiChoiceOption-element .correct .content,
+.dki-trueFalseOption-element .incorrect .content,
+.dki-multiChoiceOption-element .incorrect .content{
   background-color: #d1deeb;
   border-radius: 10px;
   -moz-border-radius: 10px;
@@ -196,6 +208,9 @@ a.submitButton span.buttonPartial.middle {
 .dki-trueFalseOption-element .multiChoiceCorrectResponse label.checked {
   background-image: url("resources/testing/radioButton_clicked_correct.png");
 }
+ 
+ 
+
 
 .questionScoreDisplay {
   position: absolute;
